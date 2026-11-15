@@ -1,0 +1,551 @@
+[
+  {
+    "url": "https://adaway.org/hosts.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/e70556964925b652f70f.txt",
+    "bytes": 243454,
+    "sha256": "8c925c37a5eaa5e1c582c76e12301797861addee5ad0fa0e6e46c9dd0136fe55",
+    "parsed_domains": 6540
+  },
+  {
+    "url": "https://adblock.mahakala.is",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/7f0d7f6e2c3216d20d9b.txt",
+    "bytes": 9999933,
+    "sha256": "1c8e157689506a9e776481ce5ac7e8ec479fe09e16c112435d299f920413d355",
+    "parsed_domains": 326186
+  },
+  {
+    "url": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/97234e851839c9c12762.txt",
+    "bytes": 43844,
+    "sha256": "3052a65fae7b9de3afc6216d9136edcb815af9f992f435f14780825af4c1ff7c",
+    "parsed_domains": 2046
+  },
+  {
+    "url": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/7ce05a7969fd86f4b2ae.txt",
+    "bytes": 617419,
+    "sha256": "e8f4d214a0b94859de2537c178ed50dd5cdddc4419e1080b074abf93c7a2e8f5",
+    "parsed_domains": 15214
+  },
+  {
+    "url": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/11170fa6b9b3e8fc77c9.txt",
+    "bytes": 4762,
+    "sha256": "de2e33be367b25c0826008e677401c706e2de7c4cc7cf0891b26fb804e0c022f",
+    "parsed_domains": 125
+  },
+  {
+    "url": "https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/ae3ae6e073b74350ec89.txt",
+    "bytes": 149097,
+    "sha256": "56ad4b618b23681eb46d926d81082b07bb8db31305bb721170b1b366d1c87ca7",
+    "parsed_domains": 4922
+  },
+  {
+    "url": "https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/27971c0b41e4246015b2.txt",
+    "bytes": 305634,
+    "sha256": "453a5f66b1f341272bf87b0d539656c930d1530525b2803a539b9ce29cf7697f",
+    "parsed_domains": 9589
+  },
+  {
+    "url": "https://hostsfile.mine.nu/hosts0.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "url": "https://hostsfile.org/Downloads/hosts.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/5eb9da75585ac098b799.txt",
+    "bytes": 793711,
+    "sha256": "ad8aa838cf9bd29389f350bb1e187e6ec605e45379214ba1082d50631fa40d3d",
+    "parsed_domains": 25241
+  },
+  {
+    "url": "https://lists.cyberhost.uk/malware.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/8723526bd3fe99d70d29.txt",
+    "bytes": 7352432,
+    "sha256": "fa8e573f0535e979fd034785f39755222150ccac0073a141c6a84a25c8c68dc4",
+    "parsed_domains": 99697
+  },
+  {
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-hosts.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/ce575d06f871ba55f910.txt",
+    "bytes": 691284,
+    "sha256": "cb198ab7a9e9faf0076d91270f3cb89780911bbe33266ae6e1d9fcbade15edb1",
+    "parsed_domains": 19256
+  },
+  {
+    "url": "https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "error": "<urlopen error timed out>"
+  },
+  {
+    "url": "https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/15bd78ccc0237af4b76c.txt",
+    "bytes": 14752,
+    "sha256": "e19ddff5fca26c1fa88ca9fc49cdd2ca4b0925444fd3aabfee9ad3320db6273d",
+    "parsed_domains": 544
+  },
+  {
+    "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/099405d23ff48d100f3a.txt",
+    "bytes": 95291,
+    "sha256": "54824bd7e161a1347b1c28478900a1f61fb6b600927b57c65b192de12ba3995d",
+    "parsed_domains": 3562
+  },
+  {
+    "url": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/7c9b29c127ec4245c83a.txt",
+    "bytes": 3083199,
+    "sha256": "b848ee7246b216c2edfe284fca015aa41579beae6770f0661da56e615058ca21",
+    "parsed_domains": 143016
+  },
+  {
+    "url": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/generated/hosts",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/14a8682caaea2bb6e3c5.txt",
+    "bytes": 19662,
+    "sha256": "f9040220aa52e1310a2a78e303df52aa5666d696916ce657a229885154b01afd",
+    "parsed_domains": 929
+  },
+  {
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/7f0588e41d381da9f33b.txt",
+    "bytes": 396003,
+    "sha256": "36c6f9f6a929e3913d7e39f5869825b50cb851bcf06bfcf7a71a2448fadfb249",
+    "parsed_domains": 11687
+  },
+  {
+    "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/0bf2e3e9c4742b3c865d.txt",
+    "bytes": 276,
+    "sha256": "c60b7ee16362fa5848bd257a14854b240e793735a2310669f2f889f391a00d70",
+    "parsed_domains": 9
+  },
+  {
+    "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/2f51457d8ee8b40047d8.txt",
+    "bytes": 68159,
+    "sha256": "5d9353a1294c0c12fb6caa7c9178224ae601f59a159ea5e4677da6b36208c876",
+    "parsed_domains": 2030
+  },
+  {
+    "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/e8d5d8005cf5e2e33578.txt",
+    "bytes": 58157,
+    "sha256": "baedee79b7a3b9e1825080f4daf42a7d9dc37eda03a4381b332b7ef807129b0e",
+    "parsed_domains": 2189
+  },
+  {
+    "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/bfd1414220325bc495b6.txt",
+    "bytes": 1628,
+    "sha256": "5e925892954443b0b0dcbfc26926d2f48e86034935887aad75a9aaaa0a8eeccc",
+    "parsed_domains": 57
+  },
+  {
+    "url": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/url-lists.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/bd19dcd579c0fbb60c4a.txt",
+    "bytes": 17650976,
+    "sha256": "0da312aafb7ae5c0ab3d446731927c94dd1ecd9faf1b77c48c4a16715a9f8cd5",
+    "parsed_domains": 826110
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/6b8c2411f22dda68b0b41757aeda10e50717a802/TOP_EU_US_Ads_Trackers_HOST",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/c0e0853ac1d7679a5935.txt",
+    "bytes": 81296,
+    "sha256": "0f1f769640623488c4cc4dc36ffc4ef54600165c2fc051e2fc24dfa204d21961",
+    "parsed_domains": 3612
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/f1a0761aa69e0b15426c.txt",
+    "bytes": 1502,
+    "sha256": "22d719cde872d51365f350e142e102be5c53dcbd668a795c0f51c14d1d812fbb",
+    "parsed_domains": 16
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/88d26bac9fbac7c8b190.txt",
+    "bytes": 16594,
+    "sha256": "d891473d90fc1caee465b1feb60d20b3b3ee2f90a398ae40aaf215f0050c9d4a",
+    "parsed_domains": 497
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/f673d344cce44acf890b.txt",
+    "bytes": 2153,
+    "sha256": "164b9bbb1030b69da5d0c2f5a327c7780c9674dc589f65996a974bb0184814ab",
+    "parsed_domains": 80
+  },
+  {
+    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/b4aa011f10f914c20f1c.txt",
+    "bytes": 1379542,
+    "sha256": "a237e408b49908fd0b14d2503a003d5a3208cff83ecf20e772abdbb7a9bc31ff",
+    "parsed_domains": 44253
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/b498898d92815f2271f6.txt",
+    "bytes": 2094253,
+    "sha256": "da63d7dd00d104bab4eebf7f7b695b13ce0a1999be24c2df92368a38d98f80cc",
+    "parsed_domains": 75948
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/694a44a4a4eddc4197a7.txt",
+    "bytes": 146593,
+    "sha256": "99c65c4a7bcbab03cb82b1068d39a3e43dd65b51ce7b089929261a818b520960",
+    "parsed_domains": 8140
+  },
+  {
+    "url": "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/4e998be5ceac99fb1625.txt",
+    "bytes": 163921,
+    "sha256": "0cdfaf52e9d303a941901e9246c930d1c073238beda42b61c928957d45e78280",
+    "parsed_domains": 6419
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/e413d034d669b085c70d.txt",
+    "bytes": 1354227,
+    "sha256": "4cbe4ca57d726b9964f5b782cc7c211243cd7f7fa4b5947af3a2b3ec3560477e",
+    "parsed_domains": 42343
+  },
+  {
+    "url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/ebb0a355310310eb6e4c.txt",
+    "bytes": 529831,
+    "sha256": "7baa12f6ab1d4ce64c5f21e3b8b210e02893f02c18ee788eeb5ae5b7cd0ce62e",
+    "parsed_domains": 18607
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/417f16d94c147bea0299.txt",
+    "bytes": 206038,
+    "sha256": "b8f84cf9119be05364e81b4debe3084cf02d7e6ed3443397a448bc609562ec10",
+    "parsed_domains": 11868
+  },
+  {
+    "url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/a41d8da9a9717d711497.txt",
+    "bytes": 12383,
+    "sha256": "709c00d24f5a50dab46ce18d8b1cd175db4593dc7f65623ed89070075a85a3a0",
+    "parsed_domains": 347
+  },
+  {
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/e7868de6fead6b660297.txt",
+    "bytes": 12755114,
+    "sha256": "14ca032574589e24c835b14da57139592987c8c953862abf1574b7942d8837ae",
+    "parsed_domains": 0
+  },
+  {
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/nsfw.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/bd4249d44d231e54da8e.txt",
+    "bytes": 1396101,
+    "sha256": "399c08741ea99dafc1110c1ea02bc1f1d098e396da3f127c763f700df54323f6",
+    "parsed_domains": 0
+  },
+  {
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/496340023ef0f01ff0a3.txt",
+    "bytes": 4897233,
+    "sha256": "2689697a05a51e28794c546eba130f12a546950b925d93b43c7b7aa869815428",
+    "parsed_domains": 0
+  },
+  {
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/108b90fb7cea2a21b8a3.txt",
+    "bytes": 28968185,
+    "sha256": "1bd2bd7ff95c369d01daa2750d8cbee5da1f0d06a8e8ce0e5a777d0812aca3eb",
+    "parsed_domains": 0
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/lists/wildcard_domains/scams.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/d0e0aa18361763b04400.txt",
+    "bytes": 9947809,
+    "sha256": "7fdb5d9dc3d221d1eedfbeb6d4b10bef12cd8f57db8d33696f36e0fd5cd9ad48",
+    "parsed_domains": 468729
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/eb100586cb50f3b54f15.txt",
+    "bytes": 49407,
+    "sha256": "061f79539890ca296f6492a0687b4b6eca780544da9b437756e881291214788e",
+    "parsed_domains": 1645
+  },
+  {
+    "url": "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/91425bc596ef6c678569.txt",
+    "bytes": 37764,
+    "sha256": "f7f48b319dc91c056070e32e019dfaafbf9fe01491dd0b2502c71d4cfffd7cbe",
+    "parsed_domains": 2355
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tg12/pihole-phishtank-list/master/list/phish_domains.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/42e78a227b3d373779ca.txt",
+    "bytes": 1757169,
+    "sha256": "e8183d99af72ed2a6411c7f535706eab4160d679d3692f5071fbe5faa4f8e654",
+    "parsed_domains": 49856
+  },
+  {
+    "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/19d62bfdcc6c0aa3b6b4.txt",
+    "bytes": 43604,
+    "sha256": "ac0360be31da0ddac23a407af6216008d656390d3bbdefac48db292aeec7216d",
+    "parsed_domains": 2700
+  },
+  {
+    "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/a0a06e5ccc3382738e91.txt",
+    "bytes": 44155,
+    "sha256": "769a4de32c69d5efd980054b2bac3945e2afa3cc36b874810da3c7fe8c744bba",
+    "parsed_domains": 2735
+  },
+  {
+    "url": "https://someonewhocares.org/hosts/zero/hosts",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/dfd8da19ccf9b81db47a.txt",
+    "bytes": 367794,
+    "sha256": "d572d7e99c8ad96948086453faab13e6b9ce4280b23b947ae491ffbd25a92b3c",
+    "parsed_domains": 13091
+  },
+  {
+    "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
+    "enabled": false,
+    "license_review": "pending",
+    "error": "HTTP Error 410: Gone"
+  },
+  {
+    "url": "https://v.firebog.net/hosts/AdguardDNS.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/adeb91c87c37c4cdce52.txt",
+    "bytes": 3997032,
+    "sha256": "3f3f26e38104331e14a6848ade2d46f70c8335ca9ad63e70ad788d3a1d4d7606",
+    "parsed_domains": 190478
+  },
+  {
+    "url": "https://v.firebog.net/hosts/Admiral.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/11d929e8b03efb46538c.txt",
+    "bytes": 28833,
+    "sha256": "d07997176d8b014f7faf523acdfb4dccf52671e9e8125285abcfc62febab8b7c",
+    "parsed_domains": 1653
+  },
+  {
+    "url": "https://v.firebog.net/hosts/Easylist.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/7faa974d2dba2c969596.txt",
+    "bytes": 998018,
+    "sha256": "a0d0b83700b7d55f466ee38dcdcedab0a835af934f9158148f2f88a99f4c7f7e",
+    "parsed_domains": 51631
+  },
+  {
+    "url": "https://v.firebog.net/hosts/Easyprivacy.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/1616694fcc2e0d6b4c56.txt",
+    "bytes": 946602,
+    "sha256": "0288b7c7e1c8bd720266c925b44e428a7a435e36cda758251fde1d1666cfb847",
+    "parsed_domains": 43262
+  },
+  {
+    "url": "https://v.firebog.net/hosts/Kowabit.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/4b06ac40a80c3cf33ed7.txt",
+    "bytes": 116849,
+    "sha256": "49fed67826eda633ed87d77708e2c0d118319142887d986217b68c6df867f58a",
+    "parsed_domains": 7680
+  },
+  {
+    "url": "https://v.firebog.net/hosts/Prigent-Ads.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/5c92dd7dc61496fd5179.txt",
+    "bytes": 70554,
+    "sha256": "0eda34105809443c4305a27c2887bcdc898e3197da73c7186fd0356d8954f40d",
+    "parsed_domains": 4269
+  },
+  {
+    "url": "https://v.firebog.net/hosts/Prigent-Adult.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/143efef66da68055b273.txt",
+    "bytes": 124426906,
+    "sha256": "bf1454bbbf900b6516b15c6a1b075b227a2325f680a906254609b58eb36968dc",
+    "parsed_domains": 4590338
+  },
+  {
+    "url": "https://v.firebog.net/hosts/Prigent-Crypto.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/9682971443b4a91abef7.txt",
+    "bytes": 203972,
+    "sha256": "cffbd6b5ed524f6dbd73d1fe4f8ab6bb8307f848dbc7edcbaad78cd38a974f05",
+    "parsed_domains": 11490
+  },
+  {
+    "url": "https://v.firebog.net/hosts/Prigent-Malware.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/ba55d009552095473029.txt",
+    "bytes": 4619861,
+    "sha256": "f5a1a66f3791fc9c78295813d2852cd129ef2b6081af69ebd85104f01c300797",
+    "parsed_domains": 239641
+  },
+  {
+    "url": "https://v.firebog.net/hosts/RPiList-Malware.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/3924a78308567080b00c.txt",
+    "bytes": 18603309,
+    "sha256": "0c68d4a0deb0c68e1caffd11153ad98c7485c9db706459166d87e0928b5eb7ee",
+    "parsed_domains": 761609
+  },
+  {
+    "url": "https://v.firebog.net/hosts/RPiList-Phishing.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/a05eddb5750a86973ab8.txt",
+    "bytes": 3777038,
+    "sha256": "f7ddbcb7d8cb3a11893feaba2896a597bd9a09451bc638bf374446f14087af71",
+    "parsed_domains": 153858
+  },
+  {
+    "url": "https://v.firebog.net/hosts/neohostsbasic.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/91f100f4f2fd68e2faab.txt",
+    "bytes": 44305,
+    "sha256": "86e19faae22e02ccb4148c8263d580572042ccb1264b51ad43fa338b2dac9952",
+    "parsed_domains": 2411
+  },
+  {
+    "url": "https://v.firebog.net/hosts/static/w3kbl.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/9401af26c002c3d5751a.txt",
+    "bytes": 8440,
+    "sha256": "6fea64b3c3cab7ca79147b7880c61871a89c7a7f802f4df00bceb167dfefac20",
+    "parsed_domains": 351
+  },
+  {
+    "url": "https://winhelp2002.mvps.org/hosts.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/ab365ffc549f930dc78c.txt",
+    "bytes": 334861,
+    "sha256": "305d2e095e5aa2bebb80384c1325354f4f477c2097fc5dbe9b10c49c1fc4453a",
+    "parsed_domains": 8728
+  },
+  {
+    "url": "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/64706598780423a0af27.txt",
+    "bytes": 14407741,
+    "sha256": "0b173f72f93228b9520ff1ba73afd5d8943676d0e16af920b7adae868a58e299",
+    "parsed_domains": 428454
+  },
+  {
+    "url": "https://www.joewein.net/dl/bl/dom-bl-base.txt",
+    "enabled": false,
+    "license_review": "pending",
+    "file": "raw/b77faa3a117ceab89d94.txt",
+    "bytes": 1080850,
+    "sha256": "4d8dbbbb797e8c7146f277fd68f511dd9be281a9ea17099c538277fcfa9b7e6f",
+    "parsed_domains": 59448
+  }
+]

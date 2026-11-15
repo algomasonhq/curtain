@@ -1,0 +1,4206 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-12T18:49:54.874660+00:00",
+  "legal_certification": false,
+  "scope": "Read-only upstream retrieval; no upload, source replacement, signing or Android modifications.",
+  "source_manifest_sha256": "c2465667f4b64f5b5f5b8a58beb75ca0459f8b502b6cea9ade1027c9a9f5be87",
+  "included_source_count": 59,
+  "catalog_source_count": 62,
+  "included_status_counts": {
+    "conditional-grant": 15,
+    "blocked-mixed": 1,
+    "blocked-no-verified-grant": 10,
+    "conditional-copyleft": 3,
+    "blocked-ambiguous": 1,
+    "conditional-upstream-review": 1,
+    "blocked-upstream-review": 3,
+    "blocked-custom-review": 2,
+    "blocked-mirror-upstream": 4,
+    "conditional-sharealike": 1,
+    "blocked-incomplete-evidence": 2,
+    "blocked-noncommercial-noderivatives": 1,
+    "curated-conditional": 4,
+    "blocked-conflicting-scope": 2,
+    "blocked-noncommercial": 5,
+    "conditional-mirror-review": 4
+  },
+  "sources": [
+    {
+      "id": "e70556964925b652f70f",
+      "url": "https://adaway.org/hosts.txt",
+      "included": true,
+      "unique_rules": 6540,
+      "categories": [
+        "advertising"
+      ],
+      "license": "CC-BY-3.0",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Credit named author/project and source URL, include license link and retained notices, identify changes; no endorsement or additional restrictions. Check third-party exclusions.",
+      "finding": "Archived list explicitly applies CC BY 3.0; website app GPL is not the list license.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/e70556964925b652f70f.txt",
+        "sha256": "8c925c37a5eaa5e1c582c76e12301797861addee5ad0fa0e6e46c9dd0136fe55"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://adaway.org/",
+          "source_ids": [
+            "e70556964925b652f70f"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.403562+00:00",
+          "status": 200,
+          "final_url": "https://adaway.org/",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/470cd2548b1ecc14f249.txt",
+          "sha256": "5b33177c48dd74be689284b8c6b0008499a258cd3a4d0d1e9ca8a5843dd808ab",
+          "bytes": 25450
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/3.0/legalcode.txt",
+          "source_ids": [
+            "e70556964925b652f70f"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.790421+00:00",
+          "status": 200,
+          "final_url": "https://creativecommons.org/licenses/by/3.0/legalcode.txt",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/a42e772eabfe071a3e47.txt",
+          "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+          "bytes": 19467
+        }
+      ],
+      "report_citations": "[1]"
+    },
+    {
+      "id": "7f0d7f6e2c3216d20d9b",
+      "url": "https://adblock.mahakala.is",
+      "included": true,
+      "unique_rules": 326183,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "Mixed upstream licenses; no unified grant verified",
+      "review_status": "blocked-mixed",
+      "publication_approved": false,
+      "requirements": "Resolve each incorporated upstream license and compatibility, including noncommercial input; preserve provenance.",
+      "finding": "Header explicitly incorporates Dan Pollock noncommercial data and many other lists; downloading this aggregate is not blanket clearance.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/7f0d7f6e2c3216d20d9b.txt",
+        "sha256": "1c8e157689506a9e776481ce5ac7e8ec479fe09e16c112435d299f920413d355"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://mahakala.is/",
+          "source_ids": [
+            "7f0d7f6e2c3216d20d9b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.404189+00:00",
+          "status": 200,
+          "final_url": "https://mahakala.is/",
+          "content_type": "text/html; charset=iso-8859-1",
+          "file": "reports/licensing-evidence/72ef2372766873ffbe57.txt",
+          "sha256": "03ab2eb79e9d131bc9436ae63832620755b75b1b9f66442972949e241a34856d",
+          "bytes": 14194
+        }
+      ],
+      "report_citations": "[2]"
+    },
+    {
+      "id": "97234e851839c9c12762",
+      "url": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt",
+      "included": true,
+      "unique_rules": 2046,
+      "categories": [
+        "malicious"
+      ],
+      "license": "Unverified",
+      "review_status": "blocked-no-verified-grant",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "No applicable full grant verified in the retrieved official evidence; absence is not proof no license exists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/97234e851839c9c12762.txt",
+        "sha256": "3052a65fae7b9de3afc6216d9136edcb815af9f992f435f14780825af4c1ff7c"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://bitbucket.org/ethanr/dns-blacklists",
+          "source_ids": [
+            "97234e851839c9c12762"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.404810+00:00",
+          "status": 200,
+          "final_url": "https://bitbucket.org/ethanr/dns-blacklists",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/10cb6b84fd2c127dba3b.txt",
+          "sha256": "7d54d1abe7edbf993aa6db10d81b098aab3caf7fdb1e312387b0ba2d1ff6ba94",
+          "bytes": 20069
+        }
+      ],
+      "report_citations": ""
+    },
+    {
+      "id": "7ce05a7969fd86f4b2ae",
+      "url": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt",
+      "included": true,
+      "unique_rules": 15214,
+      "categories": [
+        "tracking"
+      ],
+      "license": "GPL-3.0",
+      "review_status": "conditional-copyleft",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions.",
+      "finding": "Official LICENSE and README agree.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/7ce05a7969fd86f4b2ae.txt",
+        "sha256": "e8f4d214a0b94859de2537c178ed50dd5cdddc4419e1080b074abf93c7a2e8f5"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://gitlab.com/quidsup/notrack-blocklists",
+          "source_ids": [
+            "11170fa6b9b3e8fc77c9",
+            "7ce05a7969fd86f4b2ae"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.408710+00:00",
+          "status": 200,
+          "final_url": "https://gitlab.com/quidsup/notrack-blocklists",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/1350720985a187f3b33f.txt",
+          "sha256": "c5424159ecdc5067f78123acb5fd500232d35146149ec4bbf5eac7f235f645a2",
+          "bytes": 54142
+        },
+        {
+          "url": "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/LICENSE",
+          "source_ids": [
+            "11170fa6b9b3e8fc77c9",
+            "7ce05a7969fd86f4b2ae"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.672902+00:00",
+          "status": 200,
+          "final_url": "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/ae5fdbcefc22ecc15afd.txt",
+          "sha256": "89efe162747b957c10b9ec97c96a8a9857b1d8bd1e5678312eb7b99987b8217c",
+          "bytes": 35081
+        },
+        {
+          "url": "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/README.md",
+          "source_ids": [
+            "11170fa6b9b3e8fc77c9",
+            "7ce05a7969fd86f4b2ae"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.684275+00:00",
+          "status": 200,
+          "final_url": "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/fdd11da0b72f5c6d533e.txt",
+          "sha256": "681a7cc44b6606d7bbaaf367c72780e563b9ec335a5e1de0e992c799b443fe79",
+          "bytes": 1698
+        }
+      ],
+      "report_citations": "[3]"
+    },
+    {
+      "id": "11170fa6b9b3e8fc77c9",
+      "url": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt",
+      "included": true,
+      "unique_rules": 125,
+      "categories": [
+        "malicious"
+      ],
+      "license": "GPL-3.0",
+      "review_status": "conditional-copyleft",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions.",
+      "finding": "Official LICENSE and README agree.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/11170fa6b9b3e8fc77c9.txt",
+        "sha256": "de2e33be367b25c0826008e677401c706e2de7c4cc7cf0891b26fb804e0c022f"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://gitlab.com/quidsup/notrack-blocklists",
+          "source_ids": [
+            "11170fa6b9b3e8fc77c9",
+            "7ce05a7969fd86f4b2ae"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.408710+00:00",
+          "status": 200,
+          "final_url": "https://gitlab.com/quidsup/notrack-blocklists",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/1350720985a187f3b33f.txt",
+          "sha256": "c5424159ecdc5067f78123acb5fd500232d35146149ec4bbf5eac7f235f645a2",
+          "bytes": 54142
+        },
+        {
+          "url": "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/LICENSE",
+          "source_ids": [
+            "11170fa6b9b3e8fc77c9",
+            "7ce05a7969fd86f4b2ae"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.672902+00:00",
+          "status": 200,
+          "final_url": "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/ae5fdbcefc22ecc15afd.txt",
+          "sha256": "89efe162747b957c10b9ec97c96a8a9857b1d8bd1e5678312eb7b99987b8217c",
+          "bytes": 35081
+        },
+        {
+          "url": "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/README.md",
+          "source_ids": [
+            "11170fa6b9b3e8fc77c9",
+            "7ce05a7969fd86f4b2ae"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.684275+00:00",
+          "status": 200,
+          "final_url": "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/fdd11da0b72f5c6d533e.txt",
+          "sha256": "681a7cc44b6606d7bbaaf367c72780e563b9ec335a5e1de0e992c799b443fe79",
+          "bytes": 1698
+        }
+      ],
+      "report_citations": "[3]"
+    },
+    {
+      "id": "ae3ae6e073b74350ec89",
+      "url": "https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt",
+      "included": true,
+      "unique_rules": 4922,
+      "categories": [
+        "tracking"
+      ],
+      "license": "MIT",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "List header explicitly points to generator repository license; retain list notices and investigate externally incorporated seed data.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/ae3ae6e073b74350ec89.txt",
+        "sha256": "56ad4b618b23681eb46d926d81082b07bb8db31305bb721170b1b366d1c87ca7"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://hostfiles.frogeye.fr/",
+          "source_ids": [
+            "ae3ae6e073b74350ec89"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.408988+00:00",
+          "status": 200,
+          "final_url": "https://hostfiles.frogeye.fr/",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/c97580230830bc1d2e86.txt",
+          "sha256": "3627baadf71b36c35500c9d0b17b5288e661e2b613d62e1d7aeb5a95608e7e66",
+          "bytes": 9607
+        },
+        {
+          "url": "https://git.frogeye.fr/geoffrey/eulaurarien/raw/branch/master/LICENSE",
+          "source_ids": [
+            "27971c0b41e4246015b2",
+            "ae3ae6e073b74350ec89"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.654798+00:00",
+          "status": 200,
+          "final_url": "https://git.frogeye.fr/geoffrey/eulaurarien/raw/branch/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/285bbe014351e7bc9380.txt",
+          "sha256": "0c8566ee9e23c1f3e35dcaa254f07de659ef5323f59d77d9d37ffa58c215ecbc",
+          "bytes": 1087
+        }
+      ],
+      "report_citations": "[4]"
+    },
+    {
+      "id": "27971c0b41e4246015b2",
+      "url": "https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt",
+      "included": true,
+      "unique_rules": 9589,
+      "categories": [
+        "tracking"
+      ],
+      "license": "MIT",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "List header explicitly points to generator repository license; retain list notices and investigate externally incorporated seed data.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/27971c0b41e4246015b2.txt",
+        "sha256": "453a5f66b1f341272bf87b0d539656c930d1530525b2803a539b9ce29cf7697f"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://hostfiles.frogeye.fr",
+          "source_ids": [
+            "27971c0b41e4246015b2"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.409205+00:00",
+          "status": 200,
+          "final_url": "https://hostfiles.frogeye.fr",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/c046d5e407546d8f9c47.txt",
+          "sha256": "3627baadf71b36c35500c9d0b17b5288e661e2b613d62e1d7aeb5a95608e7e66",
+          "bytes": 9607
+        },
+        {
+          "url": "https://git.frogeye.fr/geoffrey/eulaurarien/raw/branch/master/LICENSE",
+          "source_ids": [
+            "27971c0b41e4246015b2",
+            "ae3ae6e073b74350ec89"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.654798+00:00",
+          "status": 200,
+          "final_url": "https://git.frogeye.fr/geoffrey/eulaurarien/raw/branch/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/285bbe014351e7bc9380.txt",
+          "sha256": "0c8566ee9e23c1f3e35dcaa254f07de659ef5323f59d77d9d37ffa58c215ecbc",
+          "bytes": 1087
+        }
+      ],
+      "report_citations": "[4]"
+    },
+    {
+      "id": "4d4f10a545c1150e0483",
+      "url": "https://hostsfile.mine.nu/hosts0.txt",
+      "included": false,
+      "unique_rules": 0,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "Unverified",
+      "review_status": "not-included",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "Failed download, no rules included; not assessed as licensed.",
+      "raw_evidence": {
+        "file": null,
+        "sha256": null
+      },
+      "official_retrievals": [],
+      "report_citations": ""
+    },
+    {
+      "id": "5eb9da75585ac098b799",
+      "url": "https://hostsfile.org/Downloads/hosts.txt",
+      "included": true,
+      "unique_rules": 25240,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "Ambiguous LGPL/GPL version",
+      "review_status": "blocked-ambiguous",
+      "publication_approved": false,
+      "requirements": "Ask publisher to clarify license/version and applicable source terms.",
+      "finding": "Header says LGPL as GPLv2 and links current LGPL text: cannot select a version safely.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/5eb9da75585ac098b799.txt",
+        "sha256": "ad8aa838cf9bd29389f350bb1e187e6ec605e45379214ba1082d50631fa40d3d"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://hostsfile.org/hosts.html",
+          "source_ids": [
+            "5eb9da75585ac098b799"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.409376+00:00",
+          "status": 200,
+          "final_url": "https://hostsfile.org/hosts.html",
+          "content_type": "text/html",
+          "file": "reports/licensing-evidence/bcc899bb4776405de7be.txt",
+          "sha256": "b20991de2c1a67111a8c6ab554226deada6ef2f64b0d1795293897a4109b9d60",
+          "bytes": 5332
+        }
+      ],
+      "report_citations": "[5]"
+    },
+    {
+      "id": "8723526bd3fe99d70d29",
+      "url": "https://lists.cyberhost.uk/malware.txt",
+      "included": true,
+      "unique_rules": 99691,
+      "categories": [
+        "malicious"
+      ],
+      "license": "CC-BY-SA-4.0 publisher claim",
+      "review_status": "conditional-upstream-review",
+      "publication_approved": false,
+      "requirements": "Credit named author/project and source URL, include license link and retained notices, identify changes; no endorsement or additional restrictions. Check third-party exclusions. Adapted data must use applicable ShareAlike license.",
+      "finding": "Official page claims CC BY-SA 4.0 but gathers public threat intelligence; upstream grants not traced.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/8723526bd3fe99d70d29.txt",
+        "sha256": "fa8e573f0535e979fd034785f39755222150ccac0073a141c6a84a25c8c68dc4"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://cyberhost.uk/malware-blocklist/",
+          "source_ids": [
+            "8723526bd3fe99d70d29"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.409522+00:00",
+          "status": 200,
+          "final_url": "https://cyberhost.uk/malware-blocklist/",
+          "content_type": "text/html",
+          "file": "reports/licensing-evidence/e717427c5dc61a673c75.txt",
+          "sha256": "c56750d33d62a8bd39b5586433cd945875c3fbeeae33c96b3f3f6359b58346fb",
+          "bytes": 55767
+        }
+      ],
+      "report_citations": "[6]"
+    },
+    {
+      "id": "ce575d06f871ba55f910",
+      "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-hosts.txt",
+      "included": true,
+      "unique_rules": 19255,
+      "categories": [
+        "malicious"
+      ],
+      "license": "CC-BY-SA-4.0 for dist; MIT/CC0 for other components",
+      "review_status": "blocked-upstream-review",
+      "publication_approved": false,
+      "requirements": "Credit named author/project and source URL, include license link and retained notices, identify changes; no endorsement or additional restrictions. Check third-party exclusions. ShareAlike applies to generated dist, not just repository software license.",
+      "finding": "Generated feed is dist; README identifies OpenPhish/IPThreat/PhishTank and different src/dist licenses. Terms of each data provider still need review.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/ce575d06f871ba55f910.txt",
+        "sha256": "cb198ab7a9e9faf0076d91270f3cb89780911bbe33266ae6e1d9fcbade15edb1"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://gitlab.com/malware-filter/phishing-filter",
+          "source_ids": [
+            "ce575d06f871ba55f910"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.409667+00:00",
+          "status": 200,
+          "final_url": "https://gitlab.com/malware-filter/phishing-filter",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/ac084981aee41f2cdb8e.txt",
+          "sha256": "3cd8db5c3024bae0b117eafeee43374f9ea7a1716591acaa4f7ede963bb59f9f",
+          "bytes": 62545
+        },
+        {
+          "url": "https://gitlab.com/malware-filter/phishing-filter/-/raw/master/LICENSE",
+          "source_ids": [
+            "ce575d06f871ba55f910"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.686504+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://gitlab.com/malware-filter/phishing-filter/-/raw/master/README.md",
+          "source_ids": [
+            "ce575d06f871ba55f910"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.711061+00:00",
+          "status": 200,
+          "final_url": "https://gitlab.com/malware-filter/phishing-filter/-/raw/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/04fbc30e99d6b982b7c9.txt",
+          "sha256": "103cd0aeed86e9846c0a40499fc065521207f48fa7caf9dcb5007fa21f09f139",
+          "bytes": 21209
+        },
+        {
+          "url": "https://gitlab.com/malware-filter/phishing-filter/-/raw/main/LICENSE",
+          "source_ids": [
+            "ce575d06f871ba55f910"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.454481+00:00",
+          "status": 200,
+          "final_url": "https://gitlab.com/malware-filter/phishing-filter/-/raw/main/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/5d8fba9c7984fee6f7c3.txt",
+          "sha256": "ded212ed5aa1602579095de45a7b6e1b2b6cab386a8b2b70bec5f7124c81238e",
+          "bytes": 1069
+        },
+        {
+          "url": "https://gitlab.com/malware-filter/phishing-filter/-/raw/main/LICENSE.md",
+          "source_ids": [
+            "ce575d06f871ba55f910"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.454704+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://gitlab.com/malware-filter/phishing-filter/-/raw/main/README.md",
+          "source_ids": [
+            "ce575d06f871ba55f910"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.454913+00:00",
+          "status": 200,
+          "final_url": "https://gitlab.com/malware-filter/phishing-filter/-/raw/main/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/649526793acffa1e8b45.txt",
+          "sha256": "eaf7eae96ec55af9af2c71d04b8e600acae6941d51bf16f17eb03ec30aa623f3",
+          "bytes": 20128
+        }
+      ],
+      "report_citations": "[7]"
+    },
+    {
+      "id": "7acddf0ebe69721648f2",
+      "url": "https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt",
+      "included": false,
+      "unique_rules": 0,
+      "categories": [
+        "malicious"
+      ],
+      "license": "Unverified",
+      "review_status": "not-included",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "Failed download, no rules included; not assessed as licensed.",
+      "raw_evidence": {
+        "file": null,
+        "sha256": null
+      },
+      "official_retrievals": [],
+      "report_citations": ""
+    },
+    {
+      "id": "15bd78ccc0237af4b76c",
+      "url": "https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt",
+      "included": true,
+      "unique_rules": 544,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "MIT",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "Official repository license verified; no blanket certification of any third-party incorporated content.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/15bd78ccc0237af4b76c.txt",
+        "sha256": "e19ddff5fca26c1fa88ca9fc49cdd2ca4b0925444fd3aabfee9ad3320db6273d"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/paulgb/BarbBlock",
+          "source_ids": [
+            "15bd78ccc0237af4b76c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.412697+00:00",
+          "status": 200,
+          "final_url": "https://github.com/paulgb/BarbBlock",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/27e74e8778c46fdf0a0e.txt",
+          "sha256": "498fdf42c3c51f9597b670e694a49f9fc9638ca3b479d4d04718ddf5c6808c35",
+          "bytes": 244761
+        },
+        {
+          "url": "https://raw.githubusercontent.com/paulgb/BarbBlock/HEAD/LICENSE",
+          "source_ids": [
+            "15bd78ccc0237af4b76c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.412977+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/paulgb/BarbBlock/HEAD/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/651808523f33e72fbfb6.txt",
+          "sha256": "e285698dc29a60d62f4889db5b61ad01d2c835f4f43d75ed57cc1e5753e8c4f1",
+          "bytes": 1068
+        },
+        {
+          "url": "https://raw.githubusercontent.com/paulgb/BarbBlock/HEAD/LICENSE.md",
+          "source_ids": [
+            "15bd78ccc0237af4b76c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.413190+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/paulgb/BarbBlock/HEAD/LICENSE.txt",
+          "source_ids": [
+            "15bd78ccc0237af4b76c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.414645+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/paulgb/BarbBlock/HEAD/README.md",
+          "source_ids": [
+            "15bd78ccc0237af4b76c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.414836+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/paulgb/BarbBlock/HEAD/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/03f5d0d7f0386f5bf9b8.txt",
+          "sha256": "20e5a87808648729690780d33078c73f6cb7e97b9bc978fa06daa61be7781d55",
+          "bytes": 3226
+        }
+      ],
+      "report_citations": "[8]"
+    },
+    {
+      "id": "099405d23ff48d100f3a",
+      "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
+      "included": true,
+      "unique_rules": 3562,
+      "categories": [
+        "advertising"
+      ],
+      "license": "Unverified",
+      "review_status": "blocked-no-verified-grant",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "No applicable full grant verified in the retrieved official evidence; absence is not proof no license exists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/099405d23ff48d100f3a.txt",
+        "sha256": "54824bd7e161a1347b1c28478900a1f61fb6b600927b57c65b192de12ba3995d"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://pgl.yoyo.org/adservers/",
+          "source_ids": [
+            "099405d23ff48d100f3a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.416120+00:00",
+          "status": 200,
+          "final_url": "https://pgl.yoyo.org/adservers/",
+          "content_type": "text/html; charset=UTF-8",
+          "file": "reports/licensing-evidence/8291827a5bcc5ae139cf.txt",
+          "sha256": "5dc54ae13d0acb573d38c75466adcbda1cdea75a4a04e2a330cb75a9447da418",
+          "bytes": 44247
+        },
+        {
+          "url": "https://pgl.yoyo.org/adservers/policy.php",
+          "source_ids": [
+            "099405d23ff48d100f3a"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.453936+00:00",
+          "status": 200,
+          "final_url": "https://pgl.yoyo.org/adservers/policy.php",
+          "content_type": "text/html; charset=UTF-8",
+          "file": "reports/licensing-evidence/b57c38308255a7b4209a.txt",
+          "sha256": "7a439d6aaf875d4515825757c36907e0f487091480f212a7f8969dcc0d6442b5",
+          "bytes": 7658
+        }
+      ],
+      "report_citations": ""
+    },
+    {
+      "id": "7c9b29c127ec4245c83a",
+      "url": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
+      "included": true,
+      "unique_rules": 143016,
+      "categories": [
+        "malicious"
+      ],
+      "license": "Own aggregation unrestricted; upstream terms reserved",
+      "review_status": "blocked-upstream-review",
+      "publication_approved": false,
+      "requirements": "Obtain applicable redistribution rights for every independent feed; support/donation does not buy rights.",
+      "finding": "Official licensing page expressly says it does not grant, transfer or sublicense upstream rights.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/7c9b29c127ec4245c83a.txt",
+        "sha256": "b848ee7246b216c2edfe284fca015aa41579beae6770f0661da56e615058ca21"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://www.phishing.army/",
+          "source_ids": [
+            "7c9b29c127ec4245c83a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.416282+00:00",
+          "status": 200,
+          "final_url": "https://www.phishing.army/",
+          "content_type": "text/html",
+          "file": "reports/licensing-evidence/6fc43747dee9f83a75a6.txt",
+          "sha256": "27323425af5592842c0c4eb1767e76a461f45a518564611286ba3b706b089aa1",
+          "bytes": 11003
+        },
+        {
+          "url": "https://phishing.army/license/",
+          "source_ids": [
+            "7c9b29c127ec4245c83a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.641495+00:00",
+          "status": 200,
+          "final_url": "https://phishing.army/license/",
+          "content_type": "text/html",
+          "file": "reports/licensing-evidence/43c15e733139a701154d.txt",
+          "sha256": "1f554406604c092d941e0fdfd093d29228a912c3dbe09a476f17215d559a140d",
+          "bytes": 10368
+        }
+      ],
+      "report_citations": "[9]"
+    },
+    {
+      "id": "14a8682caaea2bb6e3c5",
+      "url": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/generated/hosts",
+      "included": true,
+      "unique_rules": 929,
+      "categories": [
+        "malicious"
+      ],
+      "license": "CC-BY-4.0",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Credit named author/project and source URL, include license link and retained notices, identify changes; no endorsement or additional restrictions. Check third-party exclusions.",
+      "finding": "Official README applies CC BY 4.0 to repository contents.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/14a8682caaea2bb6e3c5.txt",
+        "sha256": "f9040220aa52e1310a2a78e303df52aa5666d696916ce657a229885154b01afd"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/AssoEchap/stalkerware-indicators",
+          "source_ids": [
+            "14a8682caaea2bb6e3c5"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.416489+00:00",
+          "status": 200,
+          "final_url": "https://github.com/AssoEchap/stalkerware-indicators",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/6cda74d01e60f3e318c3.txt",
+          "sha256": "9672672dd58474060bd60641992f20463f7e53880e721c91f20880edbbdb0938",
+          "bytes": 302892
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/LICENSE",
+          "source_ids": [
+            "14a8682caaea2bb6e3c5"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.416651+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/LICENSE.md",
+          "source_ids": [
+            "14a8682caaea2bb6e3c5"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.522080+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/LICENSE.txt",
+          "source_ids": [
+            "14a8682caaea2bb6e3c5"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.523093+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/README.md",
+          "source_ids": [
+            "14a8682caaea2bb6e3c5"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.524251+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/a00c932f48fab6010ea5.txt",
+          "sha256": "18b9784cb91bd41ec30587e4c471363acc5f5d7ca9b86905642de18bc618d62b",
+          "bytes": 20267
+        }
+      ],
+      "report_citations": "[10]"
+    },
+    {
+      "id": "7f0588e41d381da9f33b",
+      "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt",
+      "included": true,
+      "unique_rules": 11687,
+      "categories": [
+        "malicious"
+      ],
+      "license": "Dandelicence 1.4; file-level overrides and third-party terms",
+      "review_status": "blocked-custom-review",
+      "publication_approved": false,
+      "requirements": "Retain license/link; no endorsement; honor incorporated credit/sharealike; assess worldwide-access and limited-sale clauses plus individual file override.",
+      "finding": "Nonstandard license sections 4, 5, 7, 8 need compatibility review; not ordinary MIT.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/7f0588e41d381da9f33b.txt",
+        "sha256": "36c6f9f6a929e3913d7e39f5869825b50cb851bcf06bfcf7a71a2448fadfb249"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/DandelionSprout/adfilt",
+          "source_ids": [
+            "7f0588e41d381da9f33b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.575031+00:00",
+          "status": 200,
+          "final_url": "https://github.com/DandelionSprout/adfilt",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/9e3b9df8208d00d6197f.txt",
+          "sha256": "427cb7c916471529408ff15206c969b8c2dd2023acdf33f6752a16a75341cfc7",
+          "bytes": 486393
+        },
+        {
+          "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LICENSE",
+          "source_ids": [
+            "7f0588e41d381da9f33b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.577955+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LICENSE.md",
+          "source_ids": [
+            "7f0588e41d381da9f33b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.596555+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LICENSE.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/9e460979dbe0bb711ca0.txt",
+          "sha256": "1207acfe88e7654c8c9ad91be4523f4560ff8bfe1119e4dff53a0b5cfe9006f6",
+          "bytes": 5579
+        },
+        {
+          "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LICENSE.txt",
+          "source_ids": [
+            "7f0588e41d381da9f33b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.611496+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/README.md",
+          "source_ids": [
+            "7f0588e41d381da9f33b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.630974+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        }
+      ],
+      "report_citations": "[11]"
+    },
+    {
+      "id": "0bf2e3e9c4742b3c865d",
+      "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
+      "included": true,
+      "unique_rules": 9,
+      "categories": [
+        "advertising"
+      ],
+      "license": "MIT claimed by mirror",
+      "review_status": "blocked-mirror-upstream",
+      "publication_approved": false,
+      "requirements": "Verify Unchecky upstream redistribution grant, not merely mirror README.",
+      "finding": "FadeMind calls this a mirror; repository claim cannot itself establish upstream authority.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/0bf2e3e9c4742b3c865d.txt",
+        "sha256": "c60b7ee16362fa5848bd257a14854b240e793735a2310669f2f889f391a00d70"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/FadeMind/hosts.extras",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.632580+00:00",
+          "status": 200,
+          "final_url": "https://github.com/FadeMind/hosts.extras",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/2e32e50b10a93a36bea3.txt",
+          "sha256": "c991d41d1ff4bedc441fc1c5b2c6fa2c71f4bd4e8f20d1197ac4b1d7a0ac99e2",
+          "bytes": 259692
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.650793+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE.md",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.677213+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE.txt",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.728597+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/README.md",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.730575+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/968707f0b1f488224297.txt",
+          "sha256": "f42e6bb5c1f8d356cc6de7390bd36afbde9ac6ffe8fc7089ef3b8d6f0cafd164",
+          "bytes": 3930
+        }
+      ],
+      "report_citations": "[12]"
+    },
+    {
+      "id": "2f51457d8ee8b40047d8",
+      "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts",
+      "included": true,
+      "unique_rules": 2030,
+      "categories": [
+        "tracking"
+      ],
+      "license": "GPL-3.0-or-later claimed by mirror; upstream ambiguous",
+      "review_status": "blocked-mirror-upstream",
+      "publication_approved": false,
+      "requirements": "Resolve HostsFile.org LGPL/GPL inconsistency before selecting compatible terms.",
+      "finding": "FadeMind explicitly identifies upstream mirror sources.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/2f51457d8ee8b40047d8.txt",
+        "sha256": "5d9353a1294c0c12fb6caa7c9178224ae601f59a159ea5e4677da6b36208c876"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.650793+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE.md",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.677213+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE.txt",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.728597+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/README.md",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.730575+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/968707f0b1f488224297.txt",
+          "sha256": "f42e6bb5c1f8d356cc6de7390bd36afbde9ac6ffe8fc7089ef3b8d6f0cafd164",
+          "bytes": 3930
+        },
+        {
+          "url": "https://github.com/Fademind/hosts.extras",
+          "source_ids": [
+            "2f51457d8ee8b40047d8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.774028+00:00",
+          "status": 200,
+          "final_url": "https://github.com/Fademind/hosts.extras",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/c6c516a4d74fac9adc63.txt",
+          "sha256": "3d0e7bb7acb74815e41e832002ee6ff7fc0ce90fb6a1240d4afe8d93a624fea6",
+          "bytes": 259698
+        }
+      ],
+      "report_citations": "[12]"
+    },
+    {
+      "id": "e8d5d8005cf5e2e33578",
+      "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
+      "included": true,
+      "unique_rules": 2189,
+      "categories": [
+        "malicious"
+      ],
+      "license": "GPL-3.0-or-later claimed by mirror; upstream ambiguous",
+      "review_status": "blocked-mirror-upstream",
+      "publication_approved": false,
+      "requirements": "Resolve HostsFile.org LGPL/GPL inconsistency before selecting compatible terms.",
+      "finding": "FadeMind explicitly identifies upstream mirror sources.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/e8d5d8005cf5e2e33578.txt",
+        "sha256": "baedee79b7a3b9e1825080f4daf42a7d9dc37eda03a4381b332b7ef807129b0e"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/FadeMind/hosts.extras",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.632580+00:00",
+          "status": 200,
+          "final_url": "https://github.com/FadeMind/hosts.extras",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/2e32e50b10a93a36bea3.txt",
+          "sha256": "c991d41d1ff4bedc441fc1c5b2c6fa2c71f4bd4e8f20d1197ac4b1d7a0ac99e2",
+          "bytes": 259692
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.650793+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE.md",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.677213+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE.txt",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.728597+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/README.md",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.730575+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/968707f0b1f488224297.txt",
+          "sha256": "f42e6bb5c1f8d356cc6de7390bd36afbde9ac6ffe8fc7089ef3b8d6f0cafd164",
+          "bytes": 3930
+        }
+      ],
+      "report_citations": "[12]"
+    },
+    {
+      "id": "bfd1414220325bc495b6",
+      "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts",
+      "included": true,
+      "unique_rules": 57,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "GPL-3.0-or-later claimed by mirror; upstream ambiguous",
+      "review_status": "blocked-mirror-upstream",
+      "publication_approved": false,
+      "requirements": "Resolve HostsFile.org LGPL/GPL inconsistency before selecting compatible terms.",
+      "finding": "FadeMind explicitly identifies upstream mirror sources.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/bfd1414220325bc495b6.txt",
+        "sha256": "5e925892954443b0b0dcbfc26926d2f48e86034935887aad75a9aaaa0a8eeccc"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.650793+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE.md",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.677213+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/LICENSE.txt",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.728597+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/README.md",
+          "source_ids": [
+            "0bf2e3e9c4742b3c865d",
+            "2f51457d8ee8b40047d8",
+            "bfd1414220325bc495b6",
+            "e8d5d8005cf5e2e33578"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.730575+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/968707f0b1f488224297.txt",
+          "sha256": "f42e6bb5c1f8d356cc6de7390bd36afbde9ac6ffe8fc7089ef3b8d6f0cafd164",
+          "bytes": 3930
+        },
+        {
+          "url": "https://github.com/FadeMind/hosts.extras/",
+          "source_ids": [
+            "bfd1414220325bc495b6"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.788996+00:00",
+          "status": 200,
+          "final_url": "https://github.com/FadeMind/hosts.extras/",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/013a63909481b8ffb0c4.txt",
+          "sha256": "541e7f65529b0ec392d1f86b824271b6118e824bc6c503ef1f0881d9b9816055",
+          "bytes": 259713
+        }
+      ],
+      "report_citations": "[12]"
+    },
+    {
+      "id": "bd19dcd579c0fbb60c4a",
+      "url": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/url-lists.txt",
+      "included": true,
+      "unique_rules": 825752,
+      "categories": [
+        "malicious"
+      ],
+      "license": "MIT",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "Official repository license verified; no blanket certification of any third-party incorporated content.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/bd19dcd579c0fbb60c4a.txt",
+        "sha256": "0da312aafb7ae5c0ab3d446731927c94dd1ecd9faf1b77c48c4a16715a9f8cd5"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/HorusTeknoloji/TR-PhishingList",
+          "source_ids": [
+            "bd19dcd579c0fbb60c4a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.804107+00:00",
+          "status": 200,
+          "final_url": "https://github.com/HorusTeknoloji/TR-PhishingList",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/a93cb395f7caf2cdd623.txt",
+          "sha256": "8d87df0a57fac72e2cbc7f1921364660dedf6c2f450c487a4cd3330f241605e5",
+          "bytes": 223012
+        },
+        {
+          "url": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/LICENSE",
+          "source_ids": [
+            "bd19dcd579c0fbb60c4a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.815396+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/d5a5afce535a8899382a.txt",
+          "sha256": "99f44ce39ac4941c9103e7a13b809ef1aa57cc41222a9c6733577007376464a9",
+          "bytes": 1085
+        },
+        {
+          "url": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/LICENSE.md",
+          "source_ids": [
+            "bd19dcd579c0fbb60c4a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.831613+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/LICENSE.txt",
+          "source_ids": [
+            "bd19dcd579c0fbb60c4a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.836824+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/README.md",
+          "source_ids": [
+            "bd19dcd579c0fbb60c4a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.839193+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/de8fa67d0ee79d856deb.txt",
+          "sha256": "a1ea7285348442c6db734955c9d37e903e7216c1e4c42298cfacd9ea5d0d0996",
+          "bytes": 841
+        }
+      ],
+      "report_citations": "[13]"
+    },
+    {
+      "id": "c0e0853ac1d7679a5935",
+      "url": "https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/6b8c2411f22dda68b0b41757aeda10e50717a802/TOP_EU_US_Ads_Trackers_HOST",
+      "included": true,
+      "unique_rules": 3611,
+      "categories": [
+        "tracking"
+      ],
+      "license": "Unverified",
+      "review_status": "blocked-no-verified-grant",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "No applicable full grant verified in the retrieved official evidence; absence is not proof no license exists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/c0e0853ac1d7679a5935.txt",
+        "sha256": "0f1f769640623488c4cc4dc36ffc4ef54600165c2fc051e2fc24dfa204d21961"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/Kees1958/W3C_annual_most_used_survey_blocklist/",
+          "source_ids": [
+            "c0e0853ac1d7679a5935"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.858101+00:00",
+          "status": 200,
+          "final_url": "https://github.com/Kees1958/W3C_annual_most_used_survey_blocklist/",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/75f7fcde3dd0f558ee78.txt",
+          "sha256": "1f827c4c26fbae7b2f869f3d9262d8178101dfde417f7daae9049a74a78c3ba5",
+          "bytes": 209742
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/6b8c2411f22dda68b0b41757aeda10e50717a802/LICENSE",
+          "source_ids": [
+            "c0e0853ac1d7679a5935"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.865555+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/6b8c2411f22dda68b0b41757aeda10e50717a802/LICENSE.md",
+          "source_ids": [
+            "c0e0853ac1d7679a5935"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.901070+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/6b8c2411f22dda68b0b41757aeda10e50717a802/LICENSE.txt",
+          "source_ids": [
+            "c0e0853ac1d7679a5935"
+          ],
+          "retrieved_at": "2026-11-12T18:45:10.915602+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/6b8c2411f22dda68b0b41757aeda10e50717a802/README.md",
+          "source_ids": [
+            "c0e0853ac1d7679a5935"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.002994+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/6b8c2411f22dda68b0b41757aeda10e50717a802/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/1c0ebb367bd527153d46.txt",
+          "sha256": "37b5e643ffc3458c8ce394ec2295ba5a43679acd0f6a11905158a29855b6061a",
+          "bytes": 2044
+        }
+      ],
+      "report_citations": ""
+    },
+    {
+      "id": "f1a0761aa69e0b15426c",
+      "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt",
+      "included": true,
+      "unique_rules": 16,
+      "categories": [
+        "tracking"
+      ],
+      "license": "MIT",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "Official repository license verified; no blanket certification of any third-party incorporated content.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/f1a0761aa69e0b15426c.txt",
+        "sha256": "22d719cde872d51365f350e142e102be5c53dcbd668a795c0f51c14d1d812fbb"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/Perflyst/PiHoleBlocklist",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.055284+00:00",
+          "status": 200,
+          "final_url": "https://github.com/Perflyst/PiHoleBlocklist",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/aee9324451e2da4f06d9.txt",
+          "sha256": "de620f27e2a44b2eb46a00f2c2aaa760274b999e1ba305759fc3c90cf8202578",
+          "bytes": 213075
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.056840+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/fd8d7173a7da76c2ef3c.txt",
+          "sha256": "4c5d863d629f320c7f57f2172155b3f648eb303bea3c88a44a28dc77a2289d92",
+          "bytes": 1065
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE.md",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.061174+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE.txt",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.075391+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/README.md",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.083868+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/31510ade34cf94c0a80a.txt",
+          "sha256": "366c0c9a4d8d40b2c7084af42c1064647588216d1ce53062db6ee8429fb319a3",
+          "bytes": 877
+        }
+      ],
+      "report_citations": "[14]"
+    },
+    {
+      "id": "88d26bac9fbac7c8b190",
+      "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt",
+      "included": true,
+      "unique_rules": 497,
+      "categories": [
+        "tracking"
+      ],
+      "license": "MIT",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "Official repository license verified; no blanket certification of any third-party incorporated content.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/88d26bac9fbac7c8b190.txt",
+        "sha256": "d891473d90fc1caee465b1feb60d20b3b3ee2f90a398ae40aaf215f0050c9d4a"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/Perflyst/PiHoleBlocklist",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.055284+00:00",
+          "status": 200,
+          "final_url": "https://github.com/Perflyst/PiHoleBlocklist",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/aee9324451e2da4f06d9.txt",
+          "sha256": "de620f27e2a44b2eb46a00f2c2aaa760274b999e1ba305759fc3c90cf8202578",
+          "bytes": 213075
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.056840+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/fd8d7173a7da76c2ef3c.txt",
+          "sha256": "4c5d863d629f320c7f57f2172155b3f648eb303bea3c88a44a28dc77a2289d92",
+          "bytes": 1065
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE.md",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.061174+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE.txt",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.075391+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/README.md",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.083868+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/31510ade34cf94c0a80a.txt",
+          "sha256": "366c0c9a4d8d40b2c7084af42c1064647588216d1ce53062db6ee8429fb319a3",
+          "bytes": 877
+        }
+      ],
+      "report_citations": "[14]"
+    },
+    {
+      "id": "f673d344cce44acf890b",
+      "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt",
+      "included": true,
+      "unique_rules": 80,
+      "categories": [
+        "tracking"
+      ],
+      "license": "MIT",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "Official repository license verified; no blanket certification of any third-party incorporated content.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/f673d344cce44acf890b.txt",
+        "sha256": "164b9bbb1030b69da5d0c2f5a327c7780c9674dc589f65996a974bb0184814ab"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/Perflyst/PiHoleBlocklist",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.055284+00:00",
+          "status": 200,
+          "final_url": "https://github.com/Perflyst/PiHoleBlocklist",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/aee9324451e2da4f06d9.txt",
+          "sha256": "de620f27e2a44b2eb46a00f2c2aaa760274b999e1ba305759fc3c90cf8202578",
+          "bytes": 213075
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.056840+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/fd8d7173a7da76c2ef3c.txt",
+          "sha256": "4c5d863d629f320c7f57f2172155b3f648eb303bea3c88a44a28dc77a2289d92",
+          "bytes": 1065
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE.md",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.061174+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/LICENSE.txt",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.075391+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/README.md",
+          "source_ids": [
+            "88d26bac9fbac7c8b190",
+            "f1a0761aa69e0b15426c",
+            "f673d344cce44acf890b"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.083868+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/31510ade34cf94c0a80a.txt",
+          "sha256": "366c0c9a4d8d40b2c7084af42c1064647588216d1ce53062db6ee8429fb319a3",
+          "bytes": 877
+        }
+      ],
+      "report_citations": "[14]"
+    },
+    {
+      "id": "b4aa011f10f914c20f1c",
+      "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
+      "included": true,
+      "unique_rules": 44253,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "CC-BY-SA-4.0",
+      "review_status": "conditional-sharealike",
+      "publication_approved": false,
+      "requirements": "Credit named author/project and source URL, include license link and retained notices, identify changes; no endorsement or additional restrictions. Check third-party exclusions. License adapted data under CC BY-SA 4.0 or a permitted compatible license.",
+      "finding": "LICENSE and list header agree.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/b4aa011f10f914c20f1c.txt",
+        "sha256": "a237e408b49908fd0b14d2503a003d5a3208cff83ecf20e772abdbb7a9bc31ff"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/PolishFiltersTeam/KADhosts",
+          "source_ids": [
+            "b4aa011f10f914c20f1c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.085908+00:00",
+          "status": 200,
+          "final_url": "https://github.com/FiltersHeroes/KADhosts",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/d6c4aa04c381e518692b.txt",
+          "sha256": "7807acdcaf210c7633c05e61c0702d56da36fbaf469605aff561bb52d2c72c95",
+          "bytes": 239282
+        },
+        {
+          "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/LICENSE",
+          "source_ids": [
+            "b4aa011f10f914c20f1c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.100576+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/e31f22213f8dff91b32a.txt",
+          "sha256": "405e857a501b372cf3e9b7b224ea85868e95f7822790b1a38f4b9c26c8808413",
+          "bytes": 20132
+        },
+        {
+          "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/LICENSE.md",
+          "source_ids": [
+            "b4aa011f10f914c20f1c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.106509+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/LICENSE.txt",
+          "source_ids": [
+            "b4aa011f10f914c20f1c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.117008+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/README.md",
+          "source_ids": [
+            "b4aa011f10f914c20f1c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.179010+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/6b71178fb33d3fe1f9d6.txt",
+          "sha256": "55e35cae08f538842448d0827aea4eba508dfd52f6014dbcbda594a85baee699",
+          "bytes": 2040
+        }
+      ],
+      "report_citations": "[15]"
+    },
+    {
+      "id": "b498898d92815f2271f6",
+      "url": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt",
+      "included": true,
+      "unique_rules": 75948,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "WTFPL header claim",
+      "review_status": "blocked-incomplete-evidence",
+      "publication_approved": false,
+      "requirements": "Archive actual license version/text and attribution scope before release.",
+      "finding": "Header names WTFPL; guessed root LICENSE files were not retrieved; no full grant verified.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/b498898d92815f2271f6.txt",
+        "sha256": "da63d7dd00d104bab4eebf7f7b695b13ce0a1999be24c2df92368a38d98f80cc"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/RooneyMcNibNug/pihole-stuff/",
+          "source_ids": [
+            "b498898d92815f2271f6"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.202425+00:00",
+          "status": 200,
+          "final_url": "https://github.com/RooneyMcNibNug/pihole-stuff/",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/50682dd51af132840eac.txt",
+          "sha256": "1fd34f4ab639c8aa025d65cb8a022bdae420bba64f66aaeb83fcde0f0089293a",
+          "bytes": 235792
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/LICENSE",
+          "source_ids": [
+            "b498898d92815f2271f6"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.213445+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/LICENSE.md",
+          "source_ids": [
+            "b498898d92815f2271f6"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.239904+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/LICENSE.txt",
+          "source_ids": [
+            "b498898d92815f2271f6"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.262160+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/README.md",
+          "source_ids": [
+            "b498898d92815f2271f6"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.280725+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/cd5040b353e3c2512950.txt",
+          "sha256": "f6f4f09c53b57860a3b8986f5b1cc500c129e9cb6651a2a96b5b304ca319f129",
+          "bytes": 2347
+        }
+      ],
+      "report_citations": "[16]"
+    },
+    {
+      "id": "694a44a4a4eddc4197a7",
+      "url": "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt",
+      "included": true,
+      "unique_rules": 8140,
+      "categories": [
+        "malicious"
+      ],
+      "license": "Unverified",
+      "review_status": "blocked-no-verified-grant",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "No applicable full grant verified in the retrieved official evidence; absence is not proof no license exists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/694a44a4a4eddc4197a7.txt",
+        "sha256": "99c65c4a7bcbab03cb82b1068d39a3e43dd65b51ce7b089929261a818b520960"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/Spam404/lists",
+          "source_ids": [
+            "694a44a4a4eddc4197a7"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.284695+00:00",
+          "status": 200,
+          "final_url": "https://github.com/Spam404/lists",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/4174c79a8875c9b86017.txt",
+          "sha256": "a252b80ccb0e305593fee6aed77688f3d0e544be0fe924fc54c446c661e63c90",
+          "bytes": 178338
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Spam404/lists/master/LICENSE",
+          "source_ids": [
+            "694a44a4a4eddc4197a7"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.302482+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Spam404/lists/master/LICENSE.md",
+          "source_ids": [
+            "694a44a4a4eddc4197a7"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.322883+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Spam404/lists/master/LICENSE.txt",
+          "source_ids": [
+            "694a44a4a4eddc4197a7"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.365412+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Spam404/lists/master/README.md",
+          "source_ids": [
+            "694a44a4a4eddc4197a7"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.378032+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        }
+      ],
+      "report_citations": "[17]"
+    },
+    {
+      "id": "4e998be5ceac99fb1625",
+      "url": "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts",
+      "included": true,
+      "unique_rules": 6418,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "CC-BY-NC-ND-4.0",
+      "review_status": "blocked-noncommercial-noderivatives",
+      "publication_approved": false,
+      "requirements": "Credit named author/project and source URL, include license link and retained notices, identify changes; no endorsement or additional restrictions. Check third-party exclusions. NonCommercial and NoDerivatives; review whether compilation is adapted material; obtain permission for proposed redistribution.",
+      "finding": "Official README declares NC-ND, not permissive; domain names containing license are not license evidence.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/4e998be5ceac99fb1625.txt",
+        "sha256": "0cdfaf52e9d303a941901e9246c930d1c073238beda42b61c928957d45e78280"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/VeleSila/yhosts",
+          "source_ids": [
+            "4e998be5ceac99fb1625"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.392645+00:00",
+          "status": 200,
+          "final_url": "https://github.com/VeleSila/yhosts",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/be6922433b28adbfff24.txt",
+          "sha256": "a675c912fb0b9c1df15206cf3ee063b5ff77186e5966352901aa4caf94caae59",
+          "bytes": 207917
+        },
+        {
+          "url": "https://raw.githubusercontent.com/VeleSila/yhosts/master/LICENSE",
+          "source_ids": [
+            "4e998be5ceac99fb1625"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.399884+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/VeleSila/yhosts/master/LICENSE.md",
+          "source_ids": [
+            "4e998be5ceac99fb1625"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.409816+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/VeleSila/yhosts/master/LICENSE.txt",
+          "source_ids": [
+            "4e998be5ceac99fb1625"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.428759+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/VeleSila/yhosts/master/README.md",
+          "source_ids": [
+            "4e998be5ceac99fb1625"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.448023+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/VeleSila/yhosts/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/ff3eddf5c8a56b6d8353.txt",
+          "sha256": "67034243c1c1f5c57a4b5f39bcbff6f9a7128d38011323388ab2480bef0c423e",
+          "bytes": 1599
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt",
+          "source_ids": [
+            "4e998be5ceac99fb1625"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.455124+00:00",
+          "status": 200,
+          "final_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/9e4ecf346534f5ca3154.txt",
+          "sha256": "38762e3777f4ec00a6f769062a7c3f704fb78ce08303ecff88558da4c49cf9ea",
+          "bytes": 19127
+        }
+      ],
+      "report_citations": "[18]"
+    },
+    {
+      "id": "e413d034d669b085c70d",
+      "url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+      "included": true,
+      "unique_rules": 42342,
+      "categories": [
+        "advertising"
+      ],
+      "license": "MIT",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "Official repository license verified; no blanket certification of any third-party incorporated content.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/e413d034d669b085c70d.txt",
+        "sha256": "4cbe4ca57d726b9964f5b782cc7c211243cd7f7fa4b5947af3a2b3ec3560477e"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/anudeepND/blacklist",
+          "source_ids": [
+            "e413d034d669b085c70d"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.474147+00:00",
+          "status": 200,
+          "final_url": "https://github.com/anudeepND/blacklist",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/658661fae0fbc8706750.txt",
+          "sha256": "802f02e47c5dfc0e6be95b7e410a938c700b6609af9862fbe0ecbac1a46468a6",
+          "bytes": 300580
+        },
+        {
+          "url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/LICENSE",
+          "source_ids": [
+            "e413d034d669b085c70d"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.479640+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/753bc16a751db27b01e7.txt",
+          "sha256": "83db4f05b33afcaadfe74ded81e6db851e2b518a9ba33b86350b85dbf73f5635",
+          "bytes": 1092
+        },
+        {
+          "url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/LICENSE.md",
+          "source_ids": [
+            "e413d034d669b085c70d"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.489108+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/LICENSE.txt",
+          "source_ids": [
+            "e413d034d669b085c70d"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.495175+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/README.md",
+          "source_ids": [
+            "e413d034d669b085c70d"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.497643+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/04ab9bf0b69e798998ee.txt",
+          "sha256": "2b26628469b4937e84ff672745814b42a45360b3dce29ce6916c14101cd92bbe",
+          "bytes": 15883
+        }
+      ],
+      "report_citations": "[19]"
+    },
+    {
+      "id": "ebb0a355310310eb6e4c",
+      "url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
+      "included": true,
+      "unique_rules": 18607,
+      "categories": [
+        "advertising"
+      ],
+      "license": "MIT",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "Official repository license verified; no blanket certification of any third-party incorporated content.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/ebb0a355310310eb6e4c.txt",
+        "sha256": "7baa12f6ab1d4ce64c5f21e3b8b210e02893f02c18ee788eeb5ae5b7cd0ce62e"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/bigdargon/hostsVN",
+          "source_ids": [
+            "ebb0a355310310eb6e4c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.543027+00:00",
+          "status": 200,
+          "final_url": "https://github.com/bigdargon/hostsVN",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/591fe5ac68d110a28da6.txt",
+          "sha256": "114b2043196dbdc9163669762e898421c733894f802ac00bd39ed658ce8a3c84",
+          "bytes": 251963
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/LICENSE",
+          "source_ids": [
+            "ebb0a355310310eb6e4c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.551281+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/005952184bbdddcecfac.txt",
+          "sha256": "cc2838265743cf60eba810025e50f880cccf24e5a17768533b7f8cc5c0dc7e67",
+          "bytes": 1066
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/LICENSE.md",
+          "source_ids": [
+            "ebb0a355310310eb6e4c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.568447+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/LICENSE.txt",
+          "source_ids": [
+            "ebb0a355310310eb6e4c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.571135+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/README.md",
+          "source_ids": [
+            "ebb0a355310310eb6e4c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.582635+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/135e3510570ddba6636f.txt",
+          "sha256": "77cae316be9f074c9c99fd0a9391c33e2539196fb21603e786780c1441ad2783",
+          "bytes": 5222
+        }
+      ],
+      "report_citations": "[20]"
+    },
+    {
+      "id": "417f16d94c147bea0299",
+      "url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list",
+      "included": true,
+      "unique_rules": 11868,
+      "categories": [
+        "adult"
+      ],
+      "license": "GPL-3.0 repository; third-party input unresolved",
+      "review_status": "blocked-upstream-review",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions.",
+      "finding": "Top1m porn export derived from third-party classification; repository GPL does not by itself settle input rights.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/417f16d94c147bea0299.txt",
+        "sha256": "b8f84cf9119be05364e81b4debe3084cf02d7e6ed3443397a448bc609562ec10"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/chadmayfield/my-pihole-blocklists",
+          "source_ids": [
+            "417f16d94c147bea0299"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.591675+00:00",
+          "status": 200,
+          "final_url": "https://github.com/chadmayfield/my-pihole-blocklists",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/acfe2b13acede382fef4.txt",
+          "sha256": "682a8081a902c110fdb61f3d2fac2787f0b7da531d80470557a3ad3587cf05ef",
+          "bytes": 251006
+        },
+        {
+          "url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/LICENSE",
+          "source_ids": [
+            "417f16d94c147bea0299"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.601167+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/dca449e1f53a8726c06a.txt",
+          "sha256": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2",
+          "bytes": 35141
+        },
+        {
+          "url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/LICENSE.md",
+          "source_ids": [
+            "417f16d94c147bea0299"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.615372+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/LICENSE.txt",
+          "source_ids": [
+            "417f16d94c147bea0299"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.672869+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/README.md",
+          "source_ids": [
+            "417f16d94c147bea0299"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.705233+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/75cbbba3379375761277.txt",
+          "sha256": "d67019c0e30427ef4b5cd9b657bb7d8619b8691f8acde7c4c2f5569e0aa03ac6",
+          "bytes": 5135
+        }
+      ],
+      "report_citations": "[21]"
+    },
+    {
+      "id": "a41d8da9a9717d711497",
+      "url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
+      "included": true,
+      "unique_rules": 347,
+      "categories": [
+        "tracking"
+      ],
+      "license": "MIT",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "Official repository license verified; no blanket certification of any third-party incorporated content.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/a41d8da9a9717d711497.txt",
+        "sha256": "709c00d24f5a50dab46ce18d8b1cd175db4593dc7f65623ed89070075a85a3a0"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/crazy-max/WindowsSpyBlocker",
+          "source_ids": [
+            "a41d8da9a9717d711497"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.727521+00:00",
+          "status": 200,
+          "final_url": "https://github.com/crazy-max/WindowsSpyBlocker",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/d3b3ed13da35dc0c0cce.txt",
+          "sha256": "11cdc8ce3613263f54d07cd52a7a99281180a222c1c4a9e3cefd38d2031d079d",
+          "bytes": 266968
+        },
+        {
+          "url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/LICENSE",
+          "source_ids": [
+            "a41d8da9a9717d711497"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.729195+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/940d82576da40a8327d1.txt",
+          "sha256": "2f39b073aeaa8761f239f5b598d8b08acb3188153b2a8c7aa8b10f03a4d74bc3",
+          "bytes": 1070
+        },
+        {
+          "url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/LICENSE.md",
+          "source_ids": [
+            "a41d8da9a9717d711497"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.754974+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/LICENSE.txt",
+          "source_ids": [
+            "a41d8da9a9717d711497"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.757142+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/README.md",
+          "source_ids": [
+            "a41d8da9a9717d711497"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.760393+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/43c3c49dfff6b2b624b1.txt",
+          "sha256": "49811f593402dda0f8a2b2ca275c12834d7253af5ceecb13f7d234665f06bf1f",
+          "bytes": 2700
+        }
+      ],
+      "report_citations": "[22]"
+    },
+    {
+      "id": "e7868de6fead6b660297",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.txt",
+      "included": true,
+      "unique_rules": 648743,
+      "categories": [
+        "gambling"
+      ],
+      "license": "GPL-3.0",
+      "review_status": "curated-conditional",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions.",
+      "finding": "Official README expressly grants redistribution of the published Lists, distinguishes upstream inputs, and requires accompanying GPL. Use published exports, not independent upstream feeds; do not claim upstream data relicensed.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/e7868de6fead6b660297.txt",
+        "sha256": "14ca032574589e24c835b14da57139592987c8c953862abf1574b7942d8837ae"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.790088+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/5ccff2f4e2b002726254.txt",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.792525+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE.txt",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.812069+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/README.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.824361+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/0b63b7f1514ec3a5e621.txt",
+          "sha256": "4e99820e2167940e19c2f9f77cb40307c49aec65e925050d3973d4e9a606106f",
+          "bytes": 79057
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/usedsources.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.720410+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/sources.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.451963+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/sources.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/9c06ba411fc160f2aea7.txt",
+          "sha256": "0b43825de70710ba51fca1ab5e49bc332ec05ef43f850ac55c62bdb1da83ed57",
+          "bytes": 24966
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/FAQ.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.452397+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/FAQ.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/3bac05dd7d7ef9341c89.txt",
+          "sha256": "b3734b0c8dd7fa6fda0af2ba23047c9cfb888e8084ff60340d2a2822e2bf4eae",
+          "bytes": 83100
+        }
+      ],
+      "report_citations": "[23]"
+    },
+    {
+      "id": "bd4249d44d231e54da8e",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/nsfw.txt",
+      "included": true,
+      "unique_rules": 77141,
+      "categories": [
+        "adult"
+      ],
+      "license": "GPL-3.0",
+      "review_status": "curated-conditional",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions.",
+      "finding": "Official README expressly grants redistribution of the published Lists, distinguishes upstream inputs, and requires accompanying GPL. Use published exports, not independent upstream feeds; do not claim upstream data relicensed.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/bd4249d44d231e54da8e.txt",
+        "sha256": "399c08741ea99dafc1110c1ea02bc1f1d098e396da3f127c763f700df54323f6"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.790088+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/5ccff2f4e2b002726254.txt",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.792525+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE.txt",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.812069+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/README.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.824361+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/0b63b7f1514ec3a5e621.txt",
+          "sha256": "4e99820e2167940e19c2f9f77cb40307c49aec65e925050d3973d4e9a606106f",
+          "bytes": 79057
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/usedsources.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.720410+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/sources.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.451963+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/sources.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/9c06ba411fc160f2aea7.txt",
+          "sha256": "0b43825de70710ba51fca1ab5e49bc332ec05ef43f850ac55c62bdb1da83ed57",
+          "bytes": 24966
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/FAQ.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.452397+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/FAQ.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/3bac05dd7d7ef9341c89.txt",
+          "sha256": "b3734b0c8dd7fa6fda0af2ba23047c9cfb888e8084ff60340d2a2822e2bf4eae",
+          "bytes": 83100
+        }
+      ],
+      "report_citations": "[23]"
+    },
+    {
+      "id": "496340023ef0f01ff0a3",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.txt",
+      "included": true,
+      "unique_rules": 224729,
+      "categories": [
+        "ads",
+        "tracking",
+        "malware",
+        "phishing",
+        "scams"
+      ],
+      "license": "GPL-3.0",
+      "review_status": "curated-conditional",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions.",
+      "finding": "Official README expressly grants redistribution of the published Lists, distinguishes upstream inputs, and requires accompanying GPL. Use published exports, not independent upstream feeds; do not claim upstream data relicensed.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/496340023ef0f01ff0a3.txt",
+        "sha256": "2689697a05a51e28794c546eba130f12a546950b925d93b43c7b7aa869815428"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.790088+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/5ccff2f4e2b002726254.txt",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.792525+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE.txt",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.812069+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/README.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.824361+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/0b63b7f1514ec3a5e621.txt",
+          "sha256": "4e99820e2167940e19c2f9f77cb40307c49aec65e925050d3973d4e9a606106f",
+          "bytes": 79057
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/usedsources.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.720410+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/sources.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.451963+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/sources.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/9c06ba411fc160f2aea7.txt",
+          "sha256": "0b43825de70710ba51fca1ab5e49bc332ec05ef43f850ac55c62bdb1da83ed57",
+          "bytes": 24966
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/FAQ.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.452397+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/FAQ.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/3bac05dd7d7ef9341c89.txt",
+          "sha256": "b3734b0c8dd7fa6fda0af2ba23047c9cfb888e8084ff60340d2a2822e2bf4eae",
+          "bytes": 83100
+        }
+      ],
+      "report_citations": "[23]"
+    },
+    {
+      "id": "108b90fb7cea2a21b8a3",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.txt",
+      "included": true,
+      "unique_rules": 1428958,
+      "categories": [
+        "malware",
+        "phishing",
+        "scams"
+      ],
+      "license": "GPL-3.0",
+      "review_status": "curated-conditional",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions.",
+      "finding": "Official README expressly grants redistribution of the published Lists, distinguishes upstream inputs, and requires accompanying GPL. Use published exports, not independent upstream feeds; do not claim upstream data relicensed.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/108b90fb7cea2a21b8a3.txt",
+        "sha256": "1bd2bd7ff95c369d01daa2750d8cbee5da1f0d06a8e8ce0e5a777d0812aca3eb"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.790088+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/5ccff2f4e2b002726254.txt",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.792525+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE.txt",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.812069+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/README.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.824361+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/0b63b7f1514ec3a5e621.txt",
+          "sha256": "4e99820e2167940e19c2f9f77cb40307c49aec65e925050d3973d4e9a606106f",
+          "bytes": 79057
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/usedsources.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.720410+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/sources.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.451963+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/sources.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/9c06ba411fc160f2aea7.txt",
+          "sha256": "0b43825de70710ba51fca1ab5e49bc332ec05ef43f850ac55c62bdb1da83ed57",
+          "bytes": 24966
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/FAQ.md",
+          "source_ids": [
+            "108b90fb7cea2a21b8a3",
+            "496340023ef0f01ff0a3",
+            "bd4249d44d231e54da8e",
+            "e7868de6fead6b660297"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.452397+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/FAQ.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/3bac05dd7d7ef9341c89.txt",
+          "sha256": "b3734b0c8dd7fa6fda0af2ba23047c9cfb888e8084ff60340d2a2822e2bf4eae",
+          "bytes": 83100
+        }
+      ],
+      "report_citations": "[23]"
+    },
+    {
+      "id": "d0e0aa18361763b04400",
+      "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/lists/wildcard_domains/scams.txt",
+      "included": true,
+      "unique_rules": 468717,
+      "categories": [
+        "malicious"
+      ],
+      "license": "GPL-3.0",
+      "review_status": "conditional-copyleft",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions.",
+      "finding": "Published export points to LICENSE.md; verify incorporated external-source scope before release.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/d0e0aa18361763b04400.txt",
+        "sha256": "7fdb5d9dc3d221d1eedfbeb6d4b10bef12cd8f57db8d33696f36e0fd5cd9ad48"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/jarelllama/Scam-Blocklist",
+          "source_ids": [
+            "d0e0aa18361763b04400"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.846801+00:00",
+          "status": 200,
+          "final_url": "https://github.com/jarelllama/Scam-Blocklist",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/ce24e0e7ef89177ef430.txt",
+          "sha256": "651db3351319f8f8dc38b9fd5d1c3d582d2faf7e7edfad2c11799e2b9c04d4a5",
+          "bytes": 249418
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/LICENSE",
+          "source_ids": [
+            "d0e0aa18361763b04400"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.859492+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/LICENSE.md",
+          "source_ids": [
+            "d0e0aa18361763b04400"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.873343+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/LICENSE.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/2478dfea1824d40660b1.txt",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/LICENSE.txt",
+          "source_ids": [
+            "d0e0aa18361763b04400"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.903657+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/README.md",
+          "source_ids": [
+            "d0e0aa18361763b04400"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.916300+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/ae069b0c5febc56b72fd.txt",
+          "sha256": "06fbca17162b6216e6a50595cef9d61029472bf18631daea887f5caa39728531",
+          "bytes": 6247
+        }
+      ],
+      "report_citations": "[24]"
+    },
+    {
+      "id": "eb100586cb50f3b54f15",
+      "url": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts",
+      "included": true,
+      "unique_rules": 1645,
+      "categories": [
+        "advertising"
+      ],
+      "license": "MIT README claim",
+      "review_status": "blocked-incomplete-evidence",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "README says MIT but no full root license retrieved; archive complete grant and notices.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/eb100586cb50f3b54f15.txt",
+        "sha256": "061f79539890ca296f6492a0687b4b6eca780544da9b437756e881291214788e"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/jdlingyu/ad-wars",
+          "source_ids": [
+            "eb100586cb50f3b54f15"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.923265+00:00",
+          "status": 200,
+          "final_url": "https://github.com/jdlingyu/ad-wars",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/b83e39c4d38bb9d09537.txt",
+          "sha256": "e72a334817ea1d1cea3b0c98313d1e0a35a98146d683424a307db6b46fd7d99b",
+          "bytes": 207783
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/LICENSE",
+          "source_ids": [
+            "eb100586cb50f3b54f15"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.950885+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/LICENSE.md",
+          "source_ids": [
+            "eb100586cb50f3b54f15"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.956546+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/LICENSE.txt",
+          "source_ids": [
+            "eb100586cb50f3b54f15"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.977662+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/README.md",
+          "source_ids": [
+            "eb100586cb50f3b54f15"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.986997+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/777546cd998cf3c97fa3.txt",
+          "sha256": "3836a215050acdc5e3c274c5b27cab7cd64ac6eb781b98b4baf1c15ddc210819",
+          "bytes": 719
+        }
+      ],
+      "report_citations": "[25]"
+    },
+    {
+      "id": "91425bc596ef6c678569",
+      "url": "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt",
+      "included": true,
+      "unique_rules": 2355,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "Public-domain dedication (README)",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Retain dedication/provenance; check incorporated contributions and local database-rights concerns.",
+      "finding": "Official README states Public Domain (no copyright); not a CC0 text or warranty.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/91425bc596ef6c678569.txt",
+        "sha256": "f7f48b319dc91c056070e32e019dfaafbf9fe01491dd0b2502c71d4cfffd7cbe"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/matomo-org/referrer-spam-blacklist",
+          "source_ids": [
+            "91425bc596ef6c678569"
+          ],
+          "retrieved_at": "2026-11-12T18:45:11.996466+00:00",
+          "status": 200,
+          "final_url": "https://github.com/matomo-org/referrer-spam-list",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/d26c735180a9a3454c57.txt",
+          "sha256": "255d26877699084f9eba308faf7ac5b8a20d4a44a0dc1690d1aaa57ee920e1d9",
+          "bytes": 240051
+        },
+        {
+          "url": "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/LICENSE",
+          "source_ids": [
+            "91425bc596ef6c678569"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.021049+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/LICENSE.md",
+          "source_ids": [
+            "91425bc596ef6c678569"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.021916+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/LICENSE.txt",
+          "source_ids": [
+            "91425bc596ef6c678569"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.031134+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/README.md",
+          "source_ids": [
+            "91425bc596ef6c678569"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.037364+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/48e229613a2a3c7044ab.txt",
+          "sha256": "f5c5a21412eb5fe3a09e25c1c36eb35badedb3832204d8cf87df90b5fd0f9c77",
+          "bytes": 4291
+        }
+      ],
+      "report_citations": "[26]"
+    },
+    {
+      "id": "42e78a227b3d373779ca",
+      "url": "https://raw.githubusercontent.com/tg12/pihole-phishtank-list/master/list/phish_domains.txt",
+      "included": true,
+      "unique_rules": 49851,
+      "categories": [
+        "malicious"
+      ],
+      "license": "Unverified",
+      "review_status": "blocked-no-verified-grant",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "No applicable full grant verified in the retrieved official evidence; absence is not proof no license exists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/42e78a227b3d373779ca.txt",
+        "sha256": "e8183d99af72ed2a6411c7f535706eab4160d679d3692f5071fbe5faa4f8e654"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/tg12/pihole-phishtank-list",
+          "source_ids": [
+            "42e78a227b3d373779ca"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.054867+00:00",
+          "status": 200,
+          "final_url": "https://github.com/tg12/pihole-phishtank-list",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/b64defc624b93ea9cf18.txt",
+          "sha256": "5e076b58632e29539a3e4eb02c7ee5338c470e836bbbbce1e4a35008168570e2",
+          "bytes": 231205
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tg12/pihole-phishtank-list/master/LICENSE",
+          "source_ids": [
+            "42e78a227b3d373779ca"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.056453+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tg12/pihole-phishtank-list/master/LICENSE.md",
+          "source_ids": [
+            "42e78a227b3d373779ca"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.068014+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tg12/pihole-phishtank-list/master/LICENSE.txt",
+          "source_ids": [
+            "42e78a227b3d373779ca"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.076281+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tg12/pihole-phishtank-list/master/README.md",
+          "source_ids": [
+            "42e78a227b3d373779ca"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.125808+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/tg12/pihole-phishtank-list/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/6986d82a9434a7a0a14b.txt",
+          "sha256": "cd533b798b2cca29dc2190e1ba0385c44f07a10f70e4fa6a72ce7e53add2b150",
+          "bytes": 4171
+        }
+      ],
+      "report_citations": ""
+    },
+    {
+      "id": "19d62bfdcc6c0aa3b6b4",
+      "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+      "included": true,
+      "unique_rules": 2697,
+      "categories": [
+        "advertising"
+      ],
+      "license": "GPLv3 archived feed; current upstream repository CC-BY-NC-SA-4.0",
+      "review_status": "blocked-conflicting-scope",
+      "publication_approved": false,
+      "requirements": "Establish the authoritative license and provenance for these exact historical simple exports; do not assume current license revokes a genuine older grant, or assume old header grants all upstream data.",
+      "finding": "Current official repository license differs from archived feed headers.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/19d62bfdcc6c0aa3b6b4.txt",
+        "sha256": "ac0360be31da0ddac23a407af6216008d656390d3bbdefac48db292aeec7216d"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://disconnect.me/",
+          "source_ids": [
+            "19d62bfdcc6c0aa3b6b4",
+            "a0a06e5ccc3382738e91"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.139295+00:00",
+          "status": 200,
+          "final_url": "https://disconnect.me/",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/d0d0e599f41e8a34c77f.txt",
+          "sha256": "91b708662a1b8c1d8ffae11ac0c59cf6e296027c4958990c3c3c1b6f24fb1a07",
+          "bytes": 66915
+        },
+        {
+          "url": "https://raw.githubusercontent.com/disconnectme/disconnect-tracking-protection/master/LICENSE",
+          "source_ids": [
+            "19d62bfdcc6c0aa3b6b4",
+            "a0a06e5ccc3382738e91"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.454207+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/disconnectme/disconnect-tracking-protection/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/0974a2820bd831d03fa1.txt",
+          "sha256": "61dfa5571c8bda07d18de159f2d71173eafb38312c74ee41b5eed5f5423a4da2",
+          "bytes": 741
+        }
+      ],
+      "report_citations": "[27]"
+    },
+    {
+      "id": "a0a06e5ccc3382738e91",
+      "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt",
+      "included": true,
+      "unique_rules": 2732,
+      "categories": [
+        "malicious"
+      ],
+      "license": "GPLv3 archived feed; current upstream repository CC-BY-NC-SA-4.0",
+      "review_status": "blocked-conflicting-scope",
+      "publication_approved": false,
+      "requirements": "Establish the authoritative license and provenance for these exact historical simple exports; do not assume current license revokes a genuine older grant, or assume old header grants all upstream data.",
+      "finding": "Current official repository license differs from archived feed headers.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/a0a06e5ccc3382738e91.txt",
+        "sha256": "769a4de32c69d5efd980054b2bac3945e2afa3cc36b874810da3c7fe8c744bba"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://disconnect.me/",
+          "source_ids": [
+            "19d62bfdcc6c0aa3b6b4",
+            "a0a06e5ccc3382738e91"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.139295+00:00",
+          "status": 200,
+          "final_url": "https://disconnect.me/",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/d0d0e599f41e8a34c77f.txt",
+          "sha256": "91b708662a1b8c1d8ffae11ac0c59cf6e296027c4958990c3c3c1b6f24fb1a07",
+          "bytes": 66915
+        },
+        {
+          "url": "https://raw.githubusercontent.com/disconnectme/disconnect-tracking-protection/master/LICENSE",
+          "source_ids": [
+            "19d62bfdcc6c0aa3b6b4",
+            "a0a06e5ccc3382738e91"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.454207+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/disconnectme/disconnect-tracking-protection/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/0974a2820bd831d03fa1.txt",
+          "sha256": "61dfa5571c8bda07d18de159f2d71173eafb38312c74ee41b5eed5f5423a4da2",
+          "bytes": 741
+        }
+      ],
+      "report_citations": "[27]"
+    },
+    {
+      "id": "dfd8da19ccf9b81db47a",
+      "url": "https://someonewhocares.org/hosts/zero/hosts",
+      "included": true,
+      "unique_rules": 13090,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "Custom noncommercial + attribution",
+      "review_status": "blocked-noncommercial",
+      "publication_approved": false,
+      "requirements": "Original URL and attribution required; obtain explicit permission for modifications/public commercial-inclusive distribution.",
+      "finding": "Exact archived grant only permits copying/distributing file for non-commercial uses.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/dfd8da19ccf9b81db47a.txt",
+        "sha256": "d572d7e99c8ad96948086453faab13e6b9ce4280b23b947ae491ffbd25a92b3c"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://someonewhocares.org/",
+          "source_ids": [
+            "dfd8da19ccf9b81db47a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.146196+00:00",
+          "status": 200,
+          "final_url": "https://someonewhocares.org/",
+          "content_type": "text/html; charset=UTF-8",
+          "file": "reports/licensing-evidence/e221cebaef0296aa3958.txt",
+          "sha256": "d3ea0ddd8fbc6195231a6096d45fe83b1e628b7125e363f3b4ee743664e09acb",
+          "bytes": 4869
+        }
+      ],
+      "report_citations": "[28]"
+    },
+    {
+      "id": "623edc349c7a7bc14f0a",
+      "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
+      "included": false,
+      "unique_rules": 0,
+      "categories": [
+        "malicious"
+      ],
+      "license": "Unverified",
+      "review_status": "not-included",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "Failed download, no rules included; not assessed as licensed.",
+      "raw_evidence": {
+        "file": null,
+        "sha256": null
+      },
+      "official_retrievals": [],
+      "report_citations": ""
+    },
+    {
+      "id": "adeb91c87c37c4cdce52",
+      "url": "https://v.firebog.net/hosts/AdguardDNS.txt",
+      "included": true,
+      "unique_rules": 190478,
+      "categories": [
+        "advertising"
+      ],
+      "license": "GPL-3.0 repository; external inputs",
+      "review_status": "conditional-mirror-review",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions.",
+      "finding": "Official AdGuard DNS filter LICENSE verified; Firebog transformation and all included lists remain scope review.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/adeb91c87c37c4cdce52.txt",
+        "sha256": "3f3f26e38104331e14a6848ade2d46f70c8335ca9ad63e70ad788d3a1d4d7606"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
+          "source_ids": [
+            "adeb91c87c37c4cdce52"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.151691+00:00",
+          "status": 200,
+          "final_url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
+          "content_type": "text/plain;charset=UTF-8",
+          "file": "reports/licensing-evidence/c9b550407138a656f3d3.txt",
+          "sha256": "f42648a52a058247a9e4a21b2eeb4feea8ebfa9fb7d85bc307e9a5e4fabe8a6d",
+          "bytes": 3000000
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/LICENSE",
+          "source_ids": [
+            "adeb91c87c37c4cdce52"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.730202+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/720a2599d191bf4bb1a7.txt",
+          "sha256": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2",
+          "bytes": 35141
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/README.md",
+          "source_ids": [
+            "adeb91c87c37c4cdce52"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.787004+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/4baadfd4f755116a3786.txt",
+          "sha256": "d0929a867ff1cdfd8a1c028cedcf3e2568ee04715907aaf5b735a3a79df1931b",
+          "bytes": 11842
+        }
+      ],
+      "report_citations": "[29]"
+    },
+    {
+      "id": "11d929e8b03efb46538c",
+      "url": "https://v.firebog.net/hosts/Admiral.txt",
+      "included": true,
+      "unique_rules": 1653,
+      "categories": [
+        "advertising"
+      ],
+      "license": "MIT upstream",
+      "review_status": "conditional-mirror-review",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately.",
+      "finding": "Official upstream LanikSJ license verified; preserve mirror transformation provenance.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/11d929e8b03efb46538c.txt",
+        "sha256": "d07997176d8b014f7faf523acdfb4dccf52671e9e8125285abcfc62febab8b7c"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/LanikSJ/ubo-filters",
+          "source_ids": [
+            "11d929e8b03efb46538c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.172519+00:00",
+          "status": 200,
+          "final_url": "https://github.com/LanikSJ/ubo-filters",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/659af90c61024984a797.txt",
+          "sha256": "b7c6c08cd9cef8855af122f8776efd0aca3f395180c6b3fe41b0d7e42219dfb9",
+          "bytes": 354375
+        },
+        {
+          "url": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/HEAD/LICENSE",
+          "source_ids": [
+            "11d929e8b03efb46538c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.210851+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/HEAD/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/db5dec2b3be022b86751.txt",
+          "sha256": "70599175cc988a2d7fbec9b5c3544655656cde95e2958152a002f412a22ec271",
+          "bytes": 1098
+        },
+        {
+          "url": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/HEAD/LICENSE.md",
+          "source_ids": [
+            "11d929e8b03efb46538c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.214054+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/HEAD/LICENSE.txt",
+          "source_ids": [
+            "11d929e8b03efb46538c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.236311+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/HEAD/README.md",
+          "source_ids": [
+            "11d929e8b03efb46538c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.264545+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/HEAD/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/8628d95a86f788fc7175.txt",
+          "sha256": "5a32d2749a258b8333b292e8aa74c99ef64132c27451f694dde1535725b308fd",
+          "bytes": 13683
+        }
+      ],
+      "report_citations": "[30]"
+    },
+    {
+      "id": "7faa974d2dba2c969596",
+      "url": "https://v.firebog.net/hosts/Easylist.txt",
+      "included": true,
+      "unique_rules": 51631,
+      "categories": [
+        "advertising"
+      ],
+      "license": "GPL-3.0-or-later OR CC-BY-SA-3.0-or-later",
+      "review_status": "conditional-mirror-review",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions. Alternatively comply with CC BY-SA; credit The EasyList authors (https://easylist.to/).",
+      "finding": "Official dual licensing verified; confirm mirror transformation provenance and license of externally referenced lists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/7faa974d2dba2c969596.txt",
+        "sha256": "a0d0b83700b7d55f466ee38dcdcedab0a835af934f9158148f2f88a99f4c7f7e"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/easylist/easylist",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.267815+00:00",
+          "status": 200,
+          "final_url": "https://github.com/easylist/easylist",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/f1f61e0d5338a4af5213.txt",
+          "sha256": "5974a69b25d91ed8e70a15e0d7b8b820c54540b2cfd79c9d8f3b9d276496fba5",
+          "bytes": 342117
+        },
+        {
+          "url": "https://raw.githubusercontent.com/easylist/easylist/HEAD/LICENSE",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.282449+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/easylist/easylist/HEAD/LICENSE.md",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.286539+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/easylist/easylist/HEAD/LICENSE.txt",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.293759+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/easylist/easylist/HEAD/README.md",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.312308+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/easylist/easylist/HEAD/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/97d0d225799656077d13.txt",
+          "sha256": "3eeff528fd8ce0bf7b8b737b7e21f36e0353a2957da24e8d11c82997a0e4dd1e",
+          "bytes": 7001
+        },
+        {
+          "url": "https://easylist.to/pages/licence.html",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.453379+00:00",
+          "status": 200,
+          "final_url": "https://easylist.to/pages/licence.html",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/bd52ac1237a82d6ea19d.txt",
+          "sha256": "7da590e8a30c79d7e4d0a19f5bc3d2a8cce2e6cedd13f3485a403c32982692ab",
+          "bytes": 3893
+        }
+      ],
+      "report_citations": "[31]"
+    },
+    {
+      "id": "1616694fcc2e0d6b4c56",
+      "url": "https://v.firebog.net/hosts/Easyprivacy.txt",
+      "included": true,
+      "unique_rules": 43260,
+      "categories": [
+        "tracking"
+      ],
+      "license": "GPL-3.0-or-later OR CC-BY-SA-3.0-or-later",
+      "review_status": "conditional-mirror-review",
+      "publication_approved": false,
+      "requirements": "Include GPLv3 text and notices; identify modifications/date; license the adapted data under GPLv3; provide machine-readable preferred-form source and build/installation scripts needed to regenerate the distributed index, by equivalent network access alongside the binary (review GPL sections 1, 4\u20136). Do not impose incompatible restrictions. Alternatively comply with CC BY-SA; credit The EasyList authors (https://easylist.to/).",
+      "finding": "Official dual licensing verified; confirm mirror transformation provenance and license of externally referenced lists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/1616694fcc2e0d6b4c56.txt",
+        "sha256": "0288b7c7e1c8bd720266c925b44e428a7a435e36cda758251fde1d1666cfb847"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/easylist/easylist",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.267815+00:00",
+          "status": 200,
+          "final_url": "https://github.com/easylist/easylist",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/f1f61e0d5338a4af5213.txt",
+          "sha256": "5974a69b25d91ed8e70a15e0d7b8b820c54540b2cfd79c9d8f3b9d276496fba5",
+          "bytes": 342117
+        },
+        {
+          "url": "https://raw.githubusercontent.com/easylist/easylist/HEAD/LICENSE",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.282449+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/easylist/easylist/HEAD/LICENSE.md",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.286539+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/easylist/easylist/HEAD/LICENSE.txt",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.293759+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/easylist/easylist/HEAD/README.md",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.312308+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/easylist/easylist/HEAD/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/97d0d225799656077d13.txt",
+          "sha256": "3eeff528fd8ce0bf7b8b737b7e21f36e0353a2957da24e8d11c82997a0e4dd1e",
+          "bytes": 7001
+        },
+        {
+          "url": "https://easylist.to/pages/licence.html",
+          "source_ids": [
+            "1616694fcc2e0d6b4c56",
+            "7faa974d2dba2c969596"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.453379+00:00",
+          "status": 200,
+          "final_url": "https://easylist.to/pages/licence.html",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/bd52ac1237a82d6ea19d.txt",
+          "sha256": "7da590e8a30c79d7e4d0a19f5bc3d2a8cce2e6cedd13f3485a403c32982692ab",
+          "bytes": 3893
+        }
+      ],
+      "report_citations": "[31]"
+    },
+    {
+      "id": "4b06ac40a80c3cf33ed7",
+      "url": "https://v.firebog.net/hosts/Kowabit.txt",
+      "included": true,
+      "unique_rules": 7680,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "Unverified",
+      "review_status": "blocked-no-verified-grant",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "No applicable full grant verified in the retrieved official evidence; absence is not proof no license exists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/4b06ac40a80c3cf33ed7.txt",
+        "sha256": "49fed67826eda633ed87d77708e2c0d118319142887d986217b68c6df867f58a"
+      },
+      "official_retrievals": [
+        {
+          "url": "http://blocklist.kowabit.de/list.txt",
+          "source_ids": [
+            "4b06ac40a80c3cf33ed7"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.396457+00:00",
+          "status": "error",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'blocklist.kowabit.de'. (_ssl.c:1082)>"
+        }
+      ],
+      "report_citations": ""
+    },
+    {
+      "id": "5c92dd7dc61496fd5179",
+      "url": "https://v.firebog.net/hosts/Prigent-Ads.txt",
+      "included": true,
+      "unique_rules": 4269,
+      "categories": [
+        "tracking"
+      ],
+      "license": "Unverified",
+      "review_status": "blocked-no-verified-grant",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "No applicable full grant verified in the retrieved official evidence; absence is not proof no license exists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/5c92dd7dc61496fd5179.txt",
+        "sha256": "0eda34105809443c4305a27c2887bcdc898e3197da73c7186fd0356d8954f40d"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://dsi.ut-capitole.fr/blacklists/index_en.php",
+          "source_ids": [
+            "143efef66da68055b273",
+            "5c92dd7dc61496fd5179",
+            "9682971443b4a91abef7",
+            "ba55d009552095473029"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.414598+00:00",
+          "status": "error",
+          "error": "HTTP Error 503: Service Unavailable"
+        },
+        {
+          "url": "https://dsi.ut-capitole.fr/blacklists/index_en.php",
+          "source_ids": [
+            "143efef66da68055b273",
+            "5c92dd7dc61496fd5179",
+            "9682971443b4a91abef7",
+            "ba55d009552095473029"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.453676+00:00",
+          "status": "error",
+          "error": "HTTP Error 503: Service Unavailable"
+        }
+      ],
+      "report_citations": ""
+    },
+    {
+      "id": "143efef66da68055b273",
+      "url": "https://v.firebog.net/hosts/Prigent-Adult.txt",
+      "included": true,
+      "unique_rules": 4590337,
+      "categories": [
+        "adult"
+      ],
+      "license": "Unverified",
+      "review_status": "blocked-no-verified-grant",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "No applicable full grant verified in the retrieved official evidence; absence is not proof no license exists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/143efef66da68055b273.txt",
+        "sha256": "bf1454bbbf900b6516b15c6a1b075b227a2325f680a906254609b58eb36968dc"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://dsi.ut-capitole.fr/blacklists/index_en.php",
+          "source_ids": [
+            "143efef66da68055b273",
+            "5c92dd7dc61496fd5179",
+            "9682971443b4a91abef7",
+            "ba55d009552095473029"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.414598+00:00",
+          "status": "error",
+          "error": "HTTP Error 503: Service Unavailable"
+        },
+        {
+          "url": "https://dsi.ut-capitole.fr/blacklists/index_en.php",
+          "source_ids": [
+            "143efef66da68055b273",
+            "5c92dd7dc61496fd5179",
+            "9682971443b4a91abef7",
+            "ba55d009552095473029"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.453676+00:00",
+          "status": "error",
+          "error": "HTTP Error 503: Service Unavailable"
+        }
+      ],
+      "report_citations": ""
+    },
+    {
+      "id": "9682971443b4a91abef7",
+      "url": "https://v.firebog.net/hosts/Prigent-Crypto.txt",
+      "included": true,
+      "unique_rules": 11490,
+      "categories": [
+        "malicious"
+      ],
+      "license": "Unverified",
+      "review_status": "blocked-no-verified-grant",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "No applicable full grant verified in the retrieved official evidence; absence is not proof no license exists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/9682971443b4a91abef7.txt",
+        "sha256": "cffbd6b5ed524f6dbd73d1fe4f8ab6bb8307f848dbc7edcbaad78cd38a974f05"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://dsi.ut-capitole.fr/blacklists/index_en.php",
+          "source_ids": [
+            "143efef66da68055b273",
+            "5c92dd7dc61496fd5179",
+            "9682971443b4a91abef7",
+            "ba55d009552095473029"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.414598+00:00",
+          "status": "error",
+          "error": "HTTP Error 503: Service Unavailable"
+        },
+        {
+          "url": "https://dsi.ut-capitole.fr/blacklists/index_en.php",
+          "source_ids": [
+            "143efef66da68055b273",
+            "5c92dd7dc61496fd5179",
+            "9682971443b4a91abef7",
+            "ba55d009552095473029"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.453676+00:00",
+          "status": "error",
+          "error": "HTTP Error 503: Service Unavailable"
+        }
+      ],
+      "report_citations": ""
+    },
+    {
+      "id": "ba55d009552095473029",
+      "url": "https://v.firebog.net/hosts/Prigent-Malware.txt",
+      "included": true,
+      "unique_rules": 239640,
+      "categories": [
+        "malicious"
+      ],
+      "license": "Unverified",
+      "review_status": "blocked-no-verified-grant",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution and modification grant for exact data and all incorporated sources.",
+      "finding": "No applicable full grant verified in the retrieved official evidence; absence is not proof no license exists.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/ba55d009552095473029.txt",
+        "sha256": "f5a1a66f3791fc9c78295813d2852cd129ef2b6081af69ebd85104f01c300797"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://dsi.ut-capitole.fr/blacklists/index_en.php",
+          "source_ids": [
+            "143efef66da68055b273",
+            "5c92dd7dc61496fd5179",
+            "9682971443b4a91abef7",
+            "ba55d009552095473029"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.414598+00:00",
+          "status": "error",
+          "error": "HTTP Error 503: Service Unavailable"
+        },
+        {
+          "url": "https://dsi.ut-capitole.fr/blacklists/index_en.php",
+          "source_ids": [
+            "143efef66da68055b273",
+            "5c92dd7dc61496fd5179",
+            "9682971443b4a91abef7",
+            "ba55d009552095473029"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.453676+00:00",
+          "status": "error",
+          "error": "HTTP Error 503: Service Unavailable"
+        }
+      ],
+      "report_citations": ""
+    },
+    {
+      "id": "3924a78308567080b00c",
+      "url": "https://v.firebog.net/hosts/RPiList-Malware.txt",
+      "included": true,
+      "unique_rules": 760992,
+      "categories": [
+        "malicious"
+      ],
+      "license": "CC-BY-NC-4.0",
+      "review_status": "blocked-noncommercial",
+      "publication_approved": false,
+      "requirements": "Credit named author/project and source URL, include license link and retained notices, identify changes; no endorsement or additional restrictions. Check third-party exclusions. NonCommercial; permission required for commercial scope.",
+      "finding": "Official RPiList LICENSE.md explicitly limits commercial use; Firebog mirror supplies no broader grant.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/3924a78308567080b00c.txt",
+        "sha256": "0c68d4a0deb0c68e1caffd11153ad98c7485c9db706459166d87e0928b5eb7ee"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/RPiList/specials",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.422127+00:00",
+          "status": 200,
+          "final_url": "https://github.com/RPiList/specials",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/f92740462abd7fb6c271.txt",
+          "sha256": "9f34038e911f1665248328a3cad2591e0414b81338605fe6e1ab440036fa344f",
+          "bytes": 257318
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/LICENSE",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.431432+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/LICENSE.md",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.432774+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/LICENSE.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/7afc1a18c7baa9784feb.txt",
+          "sha256": "ddffb61218d42e39daa072c9da788f65d7c9033f180b3c17017feaa9c597753b",
+          "bytes": 21588
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/LICENSE.txt",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.478400+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/README.md",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.482065+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/98edb7072ce07f97b235.txt",
+          "sha256": "de60ee9666a34f1279b158981e3a6e878aff6f6f22e387b477ebeccfb5453226",
+          "bytes": 2441
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.532003+00:00",
+          "status": 200,
+          "final_url": "https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/2f28ea5639deea31483e.txt",
+          "sha256": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0",
+          "bytes": 19347
+        }
+      ],
+      "report_citations": "[32]"
+    },
+    {
+      "id": "a05eddb5750a86973ab8",
+      "url": "https://v.firebog.net/hosts/RPiList-Phishing.txt",
+      "included": true,
+      "unique_rules": 153858,
+      "categories": [
+        "malicious"
+      ],
+      "license": "CC-BY-NC-4.0",
+      "review_status": "blocked-noncommercial",
+      "publication_approved": false,
+      "requirements": "Credit named author/project and source URL, include license link and retained notices, identify changes; no endorsement or additional restrictions. Check third-party exclusions. NonCommercial; permission required for commercial scope.",
+      "finding": "Official RPiList LICENSE.md explicitly limits commercial use; Firebog mirror supplies no broader grant.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/a05eddb5750a86973ab8.txt",
+        "sha256": "f7ddbcb7d8cb3a11893feaba2896a597bd9a09451bc638bf374446f14087af71"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/RPiList/specials",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.422127+00:00",
+          "status": 200,
+          "final_url": "https://github.com/RPiList/specials",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/f92740462abd7fb6c271.txt",
+          "sha256": "9f34038e911f1665248328a3cad2591e0414b81338605fe6e1ab440036fa344f",
+          "bytes": 257318
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/LICENSE",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.431432+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/LICENSE.md",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.432774+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/LICENSE.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/7afc1a18c7baa9784feb.txt",
+          "sha256": "ddffb61218d42e39daa072c9da788f65d7c9033f180b3c17017feaa9c597753b",
+          "bytes": 21588
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/LICENSE.txt",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.478400+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/README.md",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.482065+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/RPiList/specials/HEAD/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/98edb7072ce07f97b235.txt",
+          "sha256": "de60ee9666a34f1279b158981e3a6e878aff6f6f22e387b477ebeccfb5453226",
+          "bytes": 2441
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt",
+          "source_ids": [
+            "3924a78308567080b00c",
+            "a05eddb5750a86973ab8"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.532003+00:00",
+          "status": 200,
+          "final_url": "https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/2f28ea5639deea31483e.txt",
+          "sha256": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0",
+          "bytes": 19347
+        }
+      ],
+      "report_citations": "[32]"
+    },
+    {
+      "id": "91f100f4f2fd68e2faab",
+      "url": "https://v.firebog.net/hosts/neohostsbasic.txt",
+      "included": true,
+      "unique_rules": 2411,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "MIT + SATA custom addition",
+      "review_status": "blocked-custom-review",
+      "publication_approved": false,
+      "requirements": "Keep the complete upstream copyright, permission and warranty notice with substantial copies; retain all third-party notices. State Curtain normalization/compilation changes separately. Assess additional star/like/thanks obligations and compatibility.",
+      "finding": "Full LICENSE contains mandatory-sounding addition after MIT text; do not label plain MIT.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/91f100f4f2fd68e2faab.txt",
+        "sha256": "86e19faae22e02ccb4148c8263d580572042ccb1264b51ad43fa338b2dac9952"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://github.com/neofelhz/neohosts",
+          "source_ids": [
+            "91f100f4f2fd68e2faab"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.493635+00:00",
+          "status": 200,
+          "final_url": "https://github.com/neofelhz/neohosts",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/2f99f9720919ffbad7d0.txt",
+          "sha256": "80fb34911fd49b2527efe4469c223b167a8601720a6bc0970a00df8848c0457a",
+          "bytes": 248293
+        },
+        {
+          "url": "https://raw.githubusercontent.com/neofelhz/neohosts/HEAD/LICENSE",
+          "source_ids": [
+            "91f100f4f2fd68e2faab"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.496359+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/neofelhz/neohosts/HEAD/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/705c647fa0055dd3115f.txt",
+          "sha256": "8d5f64e368b236afbc6d60d365e1b8f7bf0f187996e21f58c0b66c09d53ae680",
+          "bytes": 1797
+        },
+        {
+          "url": "https://raw.githubusercontent.com/neofelhz/neohosts/HEAD/LICENSE.md",
+          "source_ids": [
+            "91f100f4f2fd68e2faab"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.525249+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/neofelhz/neohosts/HEAD/LICENSE.txt",
+          "source_ids": [
+            "91f100f4f2fd68e2faab"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.545264+00:00",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/neofelhz/neohosts/HEAD/README.md",
+          "source_ids": [
+            "91f100f4f2fd68e2faab"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.549780+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/neofelhz/neohosts/HEAD/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/eb0095ef36406621470d.txt",
+          "sha256": "17c2ba903c350ebe80f54c434cf5e653e70fe4812a7014474121bf718492d6a4",
+          "bytes": 4359
+        }
+      ],
+      "report_citations": "[33]"
+    },
+    {
+      "id": "9401af26c002c3d5751a",
+      "url": "https://v.firebog.net/hosts/static/w3kbl.txt",
+      "included": true,
+      "unique_rules": 351,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "CC-BY-4.0",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Credit named author/project and source URL, include license link and retained notices, identify changes; no endorsement or additional restrictions. Check third-party exclusions.",
+      "finding": "Publisher-hosted static list explicitly grants CC BY 4.0 and commercial reuse.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/9401af26c002c3d5751a.txt",
+        "sha256": "6fea64b3c3cab7ca79147b7880c61871a89c7a7f802f4df00bceb167dfefac20"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://v.firebog.net/hosts/static/w3kbl.txt",
+          "source_ids": [
+            "9401af26c002c3d5751a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.557353+00:00",
+          "status": 200,
+          "final_url": "https://v.firebog.net/hosts/static/w3kbl.txt",
+          "content_type": "text/plain",
+          "file": "reports/licensing-evidence/9401af26c002c3d5751a.txt",
+          "sha256": "6fea64b3c3cab7ca79147b7880c61871a89c7a7f802f4df00bceb167dfefac20",
+          "bytes": 8440
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+          "source_ids": [
+            "9401af26c002c3d5751a"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.801073+00:00",
+          "status": 200,
+          "final_url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/41a68495c7f4b8054194.txt",
+          "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+          "bytes": 18657
+        }
+      ],
+      "report_citations": "[34]"
+    },
+    {
+      "id": "ab365ffc549f930dc78c",
+      "url": "https://winhelp2002.mvps.org/hosts.txt",
+      "included": true,
+      "unique_rules": 8728,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "CC-BY-NC-SA-4.0 in archived list",
+      "review_status": "blocked-noncommercial",
+      "publication_approved": false,
+      "requirements": "Credit named author/project and source URL, include license link and retained notices, identify changes; no endorsement or additional restrictions. Check third-party exclusions. NonCommercial and ShareAlike; obtain permission or verify intended use qualifies.",
+      "finding": "Website links older 2.0/3.0 variants; retain exact list-specific 4.0 grant, do not flatten version discrepancies.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/ab365ffc549f930dc78c.txt",
+        "sha256": "305d2e095e5aa2bebb80384c1325354f4f477c2097fc5dbe9b10c49c1fc4453a"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://winhelp2002.mvps.org/",
+          "source_ids": [
+            "ab365ffc549f930dc78c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.587538+00:00",
+          "status": 200,
+          "final_url": "https://winhelp2002.mvps.org/",
+          "content_type": "text/html",
+          "file": "reports/licensing-evidence/338d16e499d399508075.txt",
+          "sha256": "92f1cffe6c4ceb39721d5e4abcaeb0e5ad388d688335019d21e8ffbff9cc5997",
+          "bytes": 9700
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt",
+          "source_ids": [
+            "ab365ffc549f930dc78c"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.805427+00:00",
+          "status": 200,
+          "final_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/34e8127f1734ceefaf8e.txt",
+          "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+          "bytes": 20850
+        }
+      ],
+      "report_citations": "[35]"
+    },
+    {
+      "id": "64706598780423a0af27",
+      "url": "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
+      "included": true,
+      "unique_rules": 428440,
+      "categories": [
+        "tracking"
+      ],
+      "license": "Apache-2.0",
+      "review_status": "conditional-grant",
+      "publication_approved": false,
+      "requirements": "Ship Apache-2.0 license; retain copyright/attribution and any NOTICE; mark modified files; review any incorporated third-party terms.",
+      "finding": "Official LICENSE and archived header agree.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/64706598780423a0af27.txt",
+        "sha256": "0b173f72f93228b9520ff1ba73afd5d8943676d0e16af920b7adae868a58e299"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://www.github.developerdan.com/hosts/",
+          "source_ids": [
+            "64706598780423a0af27"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.610368+00:00",
+          "status": 200,
+          "final_url": "https://www.github.developerdan.com/hosts/",
+          "content_type": "text/html; charset=utf-8",
+          "file": "reports/licensing-evidence/3d33a0f48c445498019c.txt",
+          "sha256": "dc01952cedfdd5a88edd17ae1ea42dfba2e0f6617889f118f83b498d73f59c7e",
+          "bytes": 10739
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lightswitch05/hosts/master/LICENSE",
+          "source_ids": [
+            "64706598780423a0af27"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.452680+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/lightswitch05/hosts/master/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/2b5abf738cde0f89bbb3.txt",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lightswitch05/hosts/master/README.md",
+          "source_ids": [
+            "64706598780423a0af27"
+          ],
+          "retrieved_at": "2026-11-12T18:46:15.453130+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/lightswitch05/hosts/master/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "file": "reports/licensing-evidence/7bd0d3adef92ff35c460.txt",
+          "sha256": "8dd6c09d15e117054301d13fe987a8e7f8ec26c7066511c8cbb16c27e3ca798b",
+          "bytes": 5207
+        }
+      ],
+      "report_citations": "[36]"
+    },
+    {
+      "id": "b77faa3a117ceab89d94",
+      "url": "https://www.joewein.net/dl/bl/dom-bl-base.txt",
+      "included": true,
+      "unique_rules": 59448,
+      "categories": [
+        "suspicious"
+      ],
+      "license": "Research/noncommercial use only (website)",
+      "review_status": "blocked-noncommercial",
+      "publication_approved": false,
+      "requirements": "Obtain explicit redistribution permission and applicable SURBL licensing; use permission is not a republication grant.",
+      "finding": "Official site says data published here is for research and non-commercial use.",
+      "raw_evidence": {
+        "file": "data/blocklists/raw/b77faa3a117ceab89d94.txt",
+        "sha256": "4d8dbbbb797e8c7146f277fd68f511dd9be281a9ea17099c538277fcfa9b7e6f"
+      },
+      "official_retrievals": [
+        {
+          "url": "https://www.joewein.de/sw/bl-text.htm",
+          "source_ids": [
+            "b77faa3a117ceab89d94"
+          ],
+          "retrieved_at": "2026-11-12T18:45:12.638049+00:00",
+          "status": 200,
+          "final_url": "https://www.joewein.de/sw/bl-text.htm",
+          "content_type": "text/html; charset=UTF-8",
+          "file": "reports/licensing-evidence/339dd8eada3e40bf27fc.txt",
+          "sha256": "21f4e6a527894a1bf1bd787ecd686cb3acb824291c7c081ee2551fc0d839c8a6",
+          "bytes": 11841
+        }
+      ],
+      "report_citations": "[37]"
+    }
+  ],
+  "historical_review_decision": "DO_NOT_PUBLISH_CURRENT_ALL_SOURCE_INDEX",
+  "publication_context": "Historical independent review; owner subsequently chose public all-source publication. Risks remain unresolved; not legal clearance."
+}

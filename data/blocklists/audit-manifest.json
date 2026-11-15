@@ -1,0 +1,2789 @@
+{
+  "schema_version": 1,
+  "policy": "Experimental only; all sources disabled. Licensing review pending for every source. No safety certification.",
+  "canonical_schema": [
+    "rule_type",
+    "domain",
+    "source_id"
+  ],
+  "rule_semantics": {
+    "exact": "Only the named domain",
+    "suffix": "Named domain plus all descendant labels",
+    "subdomains": "Descendant labels only; apex excluded",
+    "allow-suffix": "Exception for named domain and descendants; no automatic precedence"
+  },
+  "catalog_reconciliation": {
+    "machine_count": 56,
+    "page_count": 59,
+    "machine_only": [],
+    "page_only": [
+      "https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt",
+      "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list",
+      "https://v.firebog.net/hosts/Prigent-Adult.txt"
+    ],
+    "downloaded_not_machine": [
+      "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list",
+      "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.txt",
+      "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/nsfw.txt",
+      "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.txt",
+      "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.txt",
+      "https://v.firebog.net/hosts/Prigent-Adult.txt"
+    ]
+  },
+  "sources": [
+    {
+      "id": "e70556964925b652f70f",
+      "url": "https://adaway.org/hosts.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "advertising",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://adaway.org/"
+      },
+      "content_categories": [
+        "advertising"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 10607,
+        "accepted": 6540,
+        "exceptions": 0,
+        "rejected": 2,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 6540,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 10,
+          "text": "# License:"
+        },
+        {
+          "line": 11,
+          "text": "# CC Attribution 3.0 (http://creativecommons.org/licenses/by/3.0/)"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/e70556964925b652f70f.txt",
+      "sha256": "8c925c37a5eaa5e1c582c76e12301797861addee5ad0fa0e6e46c9dd0136fe55",
+      "bytes": 243454,
+      "normalized_file": "normalized/e70556964925b652f70f.tsv",
+      "normalized_sha256": "4ed35765f5274888e96318f3b93f26a1ef58d24cb21d69d86936113ba484bd59",
+      "observed_rule_types": {
+        "exact": 6540
+      },
+      "status": "ok"
+    },
+    {
+      "id": "7f0d7f6e2c3216d20d9b",
+      "url": "https://adblock.mahakala.is",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://mahakala.is/"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 326255,
+        "accepted": 326183,
+        "exceptions": 0,
+        "rejected": 19,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 326183,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 16,
+          "text": "#   Dan Pollock's hosts (non-commercial, attribution) https://someonewhocares.org/hosts/"
+        },
+        {
+          "line": 42,
+          "text": "#   Dandelion Sprout's Anti-Malware List (Dandelicence) https://github.com/DandelionSprout/adfilt"
+        },
+        {
+          "line": 46,
+          "text": "#   ShadowWhisperer Malware (Unlicense) https://github.com/ShadowWhisperer/BlockLists"
+        },
+        {
+          "line": 47,
+          "text": "#   ShadowWhisperer Scam (Unlicense) https://github.com/ShadowWhisperer/BlockLists"
+        },
+        {
+          "line": 48,
+          "text": "#   ShadowWhisperer Ads (Unlicense) https://github.com/ShadowWhisperer/BlockLists"
+        },
+        {
+          "line": 49,
+          "text": "#   ShadowWhisperer Tracking (Unlicense) https://github.com/ShadowWhisperer/BlockLists"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/7f0d7f6e2c3216d20d9b.txt",
+      "sha256": "1c8e157689506a9e776481ce5ac7e8ec479fe09e16c112435d299f920413d355",
+      "bytes": 9999933,
+      "normalized_file": "normalized/7f0d7f6e2c3216d20d9b.tsv",
+      "normalized_sha256": "209df4571019c56581b735596340a1390a532f536c539879973329187fad8724",
+      "observed_rule_types": {
+        "exact": 326183
+      },
+      "status": "ok"
+    },
+    {
+      "id": "97234e851839c9c12762",
+      "url": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://bitbucket.org/ethanr/dns-blacklists"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 2046,
+        "accepted": 2046,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 2046,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/97234e851839c9c12762.txt",
+      "sha256": "3052a65fae7b9de3afc6216d9136edcb815af9f992f435f14780825af4c1ff7c",
+      "bytes": 43844,
+      "normalized_file": "normalized/97234e851839c9c12762.tsv",
+      "normalized_sha256": "92fa7e959fb05f76afaae3db60a12ca6d13246fff9e0d9e9614b871eb3dd35c9",
+      "observed_rule_types": {
+        "exact": 2046
+      },
+      "status": "ok"
+    },
+    {
+      "id": "7ce05a7969fd86f4b2ae",
+      "url": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://gitlab.com/quidsup/notrack-blocklists"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 15225,
+        "accepted": 15214,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 15214,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 4,
+          "text": "# License: GNU General Public License v3.0"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/7ce05a7969fd86f4b2ae.txt",
+      "sha256": "e8f4d214a0b94859de2537c178ed50dd5cdddc4419e1080b074abf93c7a2e8f5",
+      "bytes": 617419,
+      "normalized_file": "normalized/7ce05a7969fd86f4b2ae.tsv",
+      "normalized_sha256": "c36175f6e9f7b7035b96b21fd25c729bc2c30897cdd6143c6e6b9e778c109c58",
+      "observed_rule_types": {
+        "exact": 15214
+      },
+      "status": "ok"
+    },
+    {
+      "id": "11170fa6b9b3e8fc77c9",
+      "url": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://gitlab.com/quidsup/notrack-blocklists"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 136,
+        "accepted": 125,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 125,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 4,
+          "text": "# License: GNU General Public License v3.0"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/11170fa6b9b3e8fc77c9.txt",
+      "sha256": "de2e33be367b25c0826008e677401c706e2de7c4cc7cf0891b26fb804e0c022f",
+      "bytes": 4762,
+      "normalized_file": "normalized/11170fa6b9b3e8fc77c9.tsv",
+      "normalized_sha256": "a54f94861eaef57466bb378adc45d87c0437e61fee7a93a2a04b60c071f0c106",
+      "observed_rule_types": {
+        "exact": 125
+      },
+      "status": "ok"
+    },
+    {
+      "id": "ae3ae6e073b74350ec89",
+      "url": "https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://hostfiles.frogeye.fr/"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 4948,
+        "accepted": 4922,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 4922,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 11,
+          "text": "# License: https://git.frogeye.fr/geoffrey/eulaurarien/src/branch/master/LICENSE"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/ae3ae6e073b74350ec89.txt",
+      "sha256": "56ad4b618b23681eb46d926d81082b07bb8db31305bb721170b1b366d1c87ca7",
+      "bytes": 149097,
+      "normalized_file": "normalized/ae3ae6e073b74350ec89.tsv",
+      "normalized_sha256": "cd8484bbc564a31fea9acb968bc0ca794848b7261708f46449af5b21d27b48d0",
+      "observed_rule_types": {
+        "exact": 4922
+      },
+      "status": "ok"
+    },
+    {
+      "id": "27971c0b41e4246015b2",
+      "url": "https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://hostfiles.frogeye.fr"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 9617,
+        "accepted": 9589,
+        "exceptions": 0,
+        "rejected": 2,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 9589,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 11,
+          "text": "# License: https://git.frogeye.fr/geoffrey/eulaurarien/src/branch/master/LICENSE"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/27971c0b41e4246015b2.txt",
+      "sha256": "453a5f66b1f341272bf87b0d539656c930d1530525b2803a539b9ce29cf7697f",
+      "bytes": 305634,
+      "normalized_file": "normalized/27971c0b41e4246015b2.tsv",
+      "normalized_sha256": "ee88d86db40d33c90f43350c7461a93dac2a182273fe443172ad7896c11bfd97",
+      "observed_rule_types": {
+        "exact": 9589
+      },
+      "status": "ok"
+    },
+    {
+      "id": "4d4f10a545c1150e0483",
+      "url": "https://hostsfile.mine.nu/hosts0.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://hostsfile.mine.nu/"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 0,
+        "accepted": 0,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 0,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "status": "failed",
+      "error": "<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "id": "5eb9da75585ac098b799",
+      "url": "https://hostsfile.org/Downloads/hosts.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://hostsfile.org/hosts.html"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 25586,
+        "accepted": 25240,
+        "exceptions": 0,
+        "rejected": 24,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 25240,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 17,
+          "text": "# It is licensed under the LGPL as GPLv2. A copy of the"
+        },
+        {
+          "line": 18,
+          "text": "# license may be viewed at:"
+        },
+        {
+          "line": 19,
+          "text": "#      http://www.gnu.org/licenses/lgpl.txt"
+        },
+        {
+          "line": 24,
+          "text": "# PURPOSE.  See the GNU General Public License for more details."
+        }
+      ],
+      "warnings": [],
+      "file": "raw/5eb9da75585ac098b799.txt",
+      "sha256": "ad8aa838cf9bd29389f350bb1e187e6ec605e45379214ba1082d50631fa40d3d",
+      "bytes": 793711,
+      "normalized_file": "normalized/5eb9da75585ac098b799.tsv",
+      "normalized_sha256": "c43106e9da54e9db68f3ac6a8833e8edb7d2018eb1aebee333a8ceb2e2e68762",
+      "observed_rule_types": {
+        "exact": 25240
+      },
+      "status": "ok"
+    },
+    {
+      "id": "8723526bd3fe99d70d29",
+      "url": "https://lists.cyberhost.uk/malware.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://cyberhost.uk/malware-blocklist/"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 249694,
+        "accepted": 100181,
+        "exceptions": 0,
+        "rejected": 6,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 99691,
+        "duplicates": 490
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/8723526bd3fe99d70d29.txt",
+      "sha256": "fa8e573f0535e979fd034785f39755222150ccac0073a141c6a84a25c8c68dc4",
+      "bytes": 7352432,
+      "normalized_file": "normalized/8723526bd3fe99d70d29.tsv",
+      "normalized_sha256": "0f80f12de0d6bdede4da897a4c52888cae407c664ddf07f1d2398282065fb3f2",
+      "observed_rule_types": {
+        "exact": 100181
+      },
+      "status": "ok"
+    },
+    {
+      "id": "ce575d06f871ba55f910",
+      "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-hosts.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "unmarked",
+        "html_classes": [],
+        "publisher_url": "https://gitlab.com/malware-filter/phishing-filter"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 19281,
+        "accepted": 19255,
+        "exceptions": 0,
+        "rejected": 20,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 19255,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 5,
+          "text": "# License: https://gitlab.com/malware-filter/phishing-filter#license"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/ce575d06f871ba55f910.txt",
+      "sha256": "cb198ab7a9e9faf0076d91270f3cb89780911bbe33266ae6e1d9fcbade15edb1",
+      "bytes": 691284,
+      "normalized_file": "normalized/ce575d06f871ba55f910.tsv",
+      "normalized_sha256": "fb40adca9c0a858df3ed5f278fb8dd69a6033ae7f88e499af2f334e975bd61a6",
+      "observed_rule_types": {
+        "exact": 19255
+      },
+      "status": "ok"
+    },
+    {
+      "id": "7acddf0ebe69721648f2",
+      "url": "https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://osint.digitalside.it/"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 0,
+        "accepted": 0,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 0,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "status": "failed",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "id": "15bd78ccc0237af4b76c",
+      "url": "https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://github.com/paulgb/BarbBlock"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 576,
+        "accepted": 550,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 544,
+        "duplicates": 6
+      },
+      "license_evidence": [
+        {
+          "line": 64,
+          "text": "0.0.0.0 copyrightaccesscontrols.com"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/15bd78ccc0237af4b76c.txt",
+      "sha256": "e19ddff5fca26c1fa88ca9fc49cdd2ca4b0925444fd3aabfee9ad3320db6273d",
+      "bytes": 14752,
+      "normalized_file": "normalized/15bd78ccc0237af4b76c.tsv",
+      "normalized_sha256": "b8710937e15da2b19a0dc90e1f2b01649e2649dde54977cb1c83ed7c06ab54ee",
+      "observed_rule_types": {
+        "exact": 550
+      },
+      "status": "ok"
+    },
+    {
+      "id": "099405d23ff48d100f3a",
+      "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "advertising",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://pgl.yoyo.org/adservers/"
+      },
+      "content_categories": [
+        "advertising"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 3576,
+        "accepted": 3562,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 3562,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/099405d23ff48d100f3a.txt",
+      "sha256": "54824bd7e161a1347b1c28478900a1f61fb6b600927b57c65b192de12ba3995d",
+      "bytes": 95291,
+      "normalized_file": "normalized/099405d23ff48d100f3a.tsv",
+      "normalized_sha256": "2e0f22f4aaec7568366c8893f2b4b7b64026e71bcf4d7d66cb9fadbc7c074364",
+      "observed_rule_types": {
+        "exact": 3562
+      },
+      "status": "ok"
+    },
+    {
+      "id": "7c9b29c127ec4245c83a",
+      "url": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://www.phishing.army/"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 143049,
+        "accepted": 143016,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 143016,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 28,
+          "text": "# Usage and licensing: https://phishing.army/license/"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/7c9b29c127ec4245c83a.txt",
+      "sha256": "b848ee7246b216c2edfe284fca015aa41579beae6770f0661da56e615058ca21",
+      "bytes": 3083199,
+      "normalized_file": "normalized/7c9b29c127ec4245c83a.tsv",
+      "normalized_sha256": "91272cb2e269573d6ec8f2874d181e773ba1fc0b7aa3acf40aa122c2e72389f3",
+      "observed_rule_types": {
+        "exact": 143016
+      },
+      "status": "ok"
+    },
+    {
+      "id": "14a8682caaea2bb6e3c5",
+      "url": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/generated/hosts",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/AssoEchap/stalkerware-indicators"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 929,
+        "accepted": 929,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 929,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/14a8682caaea2bb6e3c5.txt",
+      "sha256": "f9040220aa52e1310a2a78e303df52aa5666d696916ce657a229885154b01afd",
+      "bytes": 19662,
+      "normalized_file": "normalized/14a8682caaea2bb6e3c5.tsv",
+      "normalized_sha256": "160bcf9e32760adee980336bff1d95276fc4ce5d624cbb69c33b423d9f866690",
+      "observed_rule_types": {
+        "exact": 929
+      },
+      "status": "ok"
+    },
+    {
+      "id": "7f0588e41d381da9f33b",
+      "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/DandelionSprout/adfilt"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 13998,
+        "accepted": 11693,
+        "exceptions": 0,
+        "rejected": 599,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 11687,
+        "duplicates": 6
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/7f0588e41d381da9f33b.txt",
+      "sha256": "36c6f9f6a929e3913d7e39f5869825b50cb851bcf06bfcf7a71a2448fadfb249",
+      "bytes": 396003,
+      "normalized_file": "normalized/7f0588e41d381da9f33b.tsv",
+      "normalized_sha256": "2bb9f738ff23d9babc1dcb0266de3e8b634ed2934941927e539e64786e9acb7e",
+      "observed_rule_types": {
+        "exact": 11693
+      },
+      "status": "ok"
+    },
+    {
+      "id": "0bf2e3e9c4742b3c865d",
+      "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "advertising",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/FadeMind/hosts.extras"
+      },
+      "content_categories": [
+        "advertising"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 9,
+        "accepted": 9,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 9,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/0bf2e3e9c4742b3c865d.txt",
+      "sha256": "c60b7ee16362fa5848bd257a14854b240e793735a2310669f2f889f391a00d70",
+      "bytes": 276,
+      "normalized_file": "normalized/0bf2e3e9c4742b3c865d.tsv",
+      "normalized_sha256": "3437f95d436026735733fb6b2636b98346c565240b0332ef2cc17ddcb2397862",
+      "observed_rule_types": {
+        "exact": 9
+      },
+      "status": "ok"
+    },
+    {
+      "id": "2f51457d8ee8b40047d8",
+      "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/Fademind/hosts.extras"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 2030,
+        "accepted": 2030,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 2030,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/2f51457d8ee8b40047d8.txt",
+      "sha256": "5d9353a1294c0c12fb6caa7c9178224ae601f59a159ea5e4677da6b36208c876",
+      "bytes": 68159,
+      "normalized_file": "normalized/2f51457d8ee8b40047d8.tsv",
+      "normalized_sha256": "d736a609eaa913142453b67fe517c70abf75bcd81b4342b4daf367da8b4c4169",
+      "observed_rule_types": {
+        "exact": 2030
+      },
+      "status": "ok"
+    },
+    {
+      "id": "e8d5d8005cf5e2e33578",
+      "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/FadeMind/hosts.extras"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 2189,
+        "accepted": 2189,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 2189,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/e8d5d8005cf5e2e33578.txt",
+      "sha256": "baedee79b7a3b9e1825080f4daf42a7d9dc37eda03a4381b332b7ef807129b0e",
+      "bytes": 58157,
+      "normalized_file": "normalized/e8d5d8005cf5e2e33578.tsv",
+      "normalized_sha256": "2ab24a8d0129c74184c4550cbfed62e51f41cb2d26ad3c1ddb483b41f24af6e5",
+      "observed_rule_types": {
+        "exact": 2189
+      },
+      "status": "ok"
+    },
+    {
+      "id": "bfd1414220325bc495b6",
+      "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/FadeMind/hosts.extras/"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 57,
+        "accepted": 57,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 57,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/bfd1414220325bc495b6.txt",
+      "sha256": "5e925892954443b0b0dcbfc26926d2f48e86034935887aad75a9aaaa0a8eeccc",
+      "bytes": 1628,
+      "normalized_file": "normalized/bfd1414220325bc495b6.tsv",
+      "normalized_sha256": "085a9e5355863cff0590ea7ab153e8ae9739b7273194e25fefb59d5458599ee1",
+      "observed_rule_types": {
+        "exact": 57
+      },
+      "status": "ok"
+    },
+    {
+      "id": "bd19dcd579c0fbb60c4a",
+      "url": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/url-lists.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://github.com/HorusTeknoloji/TR-PhishingList"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 826176,
+        "accepted": 825752,
+        "exceptions": 0,
+        "rejected": 424,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 825752,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/bd19dcd579c0fbb60c4a.txt",
+      "sha256": "0da312aafb7ae5c0ab3d446731927c94dd1ecd9faf1b77c48c4a16715a9f8cd5",
+      "bytes": 17650976,
+      "normalized_file": "normalized/bd19dcd579c0fbb60c4a.tsv",
+      "normalized_sha256": "bc33fe8b06b6a3de6910194c816eeebb8394a019d1d344989a569621e12fa844",
+      "observed_rule_types": {
+        "exact": 825752
+      },
+      "status": "ok"
+    },
+    {
+      "id": "c0e0853ac1d7679a5935",
+      "url": "https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/6b8c2411f22dda68b0b41757aeda10e50717a802/TOP_EU_US_Ads_Trackers_HOST",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://github.com/Kees1958/W3C_annual_most_used_survey_blocklist/"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 3623,
+        "accepted": 3613,
+        "exceptions": 0,
+        "rejected": 2,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 3611,
+        "duplicates": 2
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/c0e0853ac1d7679a5935.txt",
+      "sha256": "0f1f769640623488c4cc4dc36ffc4ef54600165c2fc051e2fc24dfa204d21961",
+      "bytes": 81296,
+      "normalized_file": "normalized/c0e0853ac1d7679a5935.tsv",
+      "normalized_sha256": "aa8d27aea522e1a4bfb8355d3becdc2cb2f6157ec64e15fe55c8769bea8ea3ee",
+      "observed_rule_types": {
+        "exact": 3613
+      },
+      "status": "ok"
+    },
+    {
+      "id": "f1a0761aa69e0b15426c",
+      "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://github.com/Perflyst/PiHoleBlocklist"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 70,
+        "accepted": 16,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 16,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/f1a0761aa69e0b15426c.txt",
+      "sha256": "22d719cde872d51365f350e142e102be5c53dcbd668a795c0f51c14d1d812fbb",
+      "bytes": 1502,
+      "normalized_file": "normalized/f1a0761aa69e0b15426c.tsv",
+      "normalized_sha256": "18e2bf6f0dc2e2335e646737394ad360ac629a42ccf1ca3684f1c249d787ec71",
+      "observed_rule_types": {
+        "exact": 16
+      },
+      "status": "ok"
+    },
+    {
+      "id": "88d26bac9fbac7c8b190",
+      "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://github.com/Perflyst/PiHoleBlocklist"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 630,
+        "accepted": 497,
+        "exceptions": 0,
+        "rejected": 1,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 497,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/88d26bac9fbac7c8b190.txt",
+      "sha256": "d891473d90fc1caee465b1feb60d20b3b3ee2f90a398ae40aaf215f0050c9d4a",
+      "bytes": 16594,
+      "normalized_file": "normalized/88d26bac9fbac7c8b190.tsv",
+      "normalized_sha256": "92ffaa588ed611de8e28debfe53cba560a8e51cab53aaeaa1ca0904f4dd43793",
+      "observed_rule_types": {
+        "exact": 497
+      },
+      "status": "ok"
+    },
+    {
+      "id": "f673d344cce44acf890b",
+      "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://github.com/Perflyst/PiHoleBlocklist"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 112,
+        "accepted": 80,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 80,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/f673d344cce44acf890b.txt",
+      "sha256": "164b9bbb1030b69da5d0c2f5a327c7780c9674dc589f65996a974bb0184814ab",
+      "bytes": 2153,
+      "normalized_file": "normalized/f673d344cce44acf890b.tsv",
+      "normalized_sha256": "8ae75e11b347d92f850a52d62393a52196bb694bd4ed7c8ccf23eab661f84cb8",
+      "observed_rule_types": {
+        "exact": 80
+      },
+      "status": "ok"
+    },
+    {
+      "id": "b4aa011f10f914c20f1c",
+      "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/PolishFiltersTeam/KADhosts"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 44301,
+        "accepted": 44255,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 44253,
+        "duplicates": 2
+      },
+      "license_evidence": [
+        {
+          "line": 8,
+          "text": "# License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/b4aa011f10f914c20f1c.txt",
+      "sha256": "a237e408b49908fd0b14d2503a003d5a3208cff83ecf20e772abdbb7a9bc31ff",
+      "bytes": 1379542,
+      "normalized_file": "normalized/b4aa011f10f914c20f1c.tsv",
+      "normalized_sha256": "58150be06bcc64cf6af4ecc318f3068c49bf12f0fa07b5f8f3388c6d2c559904",
+      "observed_rule_types": {
+        "exact": 44255
+      },
+      "status": "ok"
+    },
+    {
+      "id": "b498898d92815f2271f6",
+      "url": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "unmarked",
+        "html_classes": [],
+        "publisher_url": "https://github.com/RooneyMcNibNug/pihole-stuff/"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 76393,
+        "accepted": 76350,
+        "exceptions": 0,
+        "rejected": 23,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 75948,
+        "duplicates": 402
+      },
+      "license_evidence": [
+        {
+          "line": 5,
+          "text": "# License: WTFPL (http://www.wtfpl.net/about/)"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/b498898d92815f2271f6.txt",
+      "sha256": "da63d7dd00d104bab4eebf7f7b695b13ce0a1999be24c2df92368a38d98f80cc",
+      "bytes": 2094253,
+      "normalized_file": "normalized/b498898d92815f2271f6.tsv",
+      "normalized_sha256": "b3d235234a8cc3e659f660d75fe2d533641772d20b88a2c3d561529ee8cb5220",
+      "observed_rule_types": {
+        "exact": 76350
+      },
+      "status": "ok"
+    },
+    {
+      "id": "694a44a4a4eddc4197a7",
+      "url": "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/Spam404/lists"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 8140,
+        "accepted": 8140,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 8140,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 50,
+          "text": "bitdefenderlicense.com"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/694a44a4a4eddc4197a7.txt",
+      "sha256": "99c65c4a7bcbab03cb82b1068d39a3e43dd65b51ce7b089929261a818b520960",
+      "bytes": 146593,
+      "normalized_file": "normalized/694a44a4a4eddc4197a7.tsv",
+      "normalized_sha256": "f9ba7a9d1f0237605bc27201eaa7954339cb9988918be53f4b8d701f1290f93a",
+      "observed_rule_types": {
+        "exact": 8140
+      },
+      "status": "ok"
+    },
+    {
+      "id": "4e998be5ceac99fb1625",
+      "url": "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://github.com/VeleSila/yhosts"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 6428,
+        "accepted": 6418,
+        "exceptions": 0,
+        "rejected": 7,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 6418,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 45,
+          "text": "#0.0.0.0 lm.licenses.adobe.com"
+        },
+        {
+          "line": 46,
+          "text": "0.0.0.0 lmlicenses.wip4.adobe.com"
+        },
+        {
+          "line": 48,
+          "text": "0.0.0.0 na2m-pr.licenses.adobe.com"
+        },
+        {
+          "line": 51,
+          "text": "0.0.0.0 licenses.ashampoo.com"
+        },
+        {
+          "line": 52,
+          "text": "0.0.0.0 license.bluesoleil.com"
+        },
+        {
+          "line": 53,
+          "text": "0.0.0.0 license2.bluesoleil.com"
+        },
+        {
+          "line": 70,
+          "text": "0.0.0.0 license.lumion3d.com"
+        },
+        {
+          "line": 71,
+          "text": "0.0.0.0 license.lumion3d.net"
+        },
+        {
+          "line": 75,
+          "text": "0.0.0.0 license.piriform.com"
+        },
+        {
+          "line": 76,
+          "text": "0.0.0.0 licensing.tableausoftware.com"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/4e998be5ceac99fb1625.txt",
+      "sha256": "0cdfaf52e9d303a941901e9246c930d1c073238beda42b61c928957d45e78280",
+      "bytes": 163921,
+      "normalized_file": "normalized/4e998be5ceac99fb1625.tsv",
+      "normalized_sha256": "322df3551990984d7213779dee78d71b08d29d59e9a7035b6d6091e37b33074e",
+      "observed_rule_types": {
+        "exact": 6418
+      },
+      "status": "ok"
+    },
+    {
+      "id": "e413d034d669b085c70d",
+      "url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "advertising",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/anudeepND/blacklist"
+      },
+      "content_categories": [
+        "advertising"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 42541,
+        "accepted": 42515,
+        "exceptions": 0,
+        "rejected": 16,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 42342,
+        "duplicates": 173
+      },
+      "license_evidence": [
+        {
+          "line": 5,
+          "text": "# Licence: https://github.com/anudeepND/blacklist/blob/master/LICENSE"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/e413d034d669b085c70d.txt",
+      "sha256": "4cbe4ca57d726b9964f5b782cc7c211243cd7f7fa4b5947af3a2b3ec3560477e",
+      "bytes": 1354227,
+      "normalized_file": "normalized/e413d034d669b085c70d.tsv",
+      "normalized_sha256": "c69e86a274b9aa13a2f87aa92b4fc4025f2ffd706bf9818992b964587be8ba60",
+      "observed_rule_types": {
+        "exact": 42515
+      },
+      "status": "ok"
+    },
+    {
+      "id": "ebb0a355310310eb6e4c",
+      "url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "advertising",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/bigdargon/hostsVN"
+      },
+      "content_categories": [
+        "advertising"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 20411,
+        "accepted": 18607,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 18607,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/ebb0a355310310eb6e4c.txt",
+      "sha256": "7baa12f6ab1d4ce64c5f21e3b8b210e02893f02c18ee788eeb5ae5b7cd0ce62e",
+      "bytes": 529831,
+      "normalized_file": "normalized/ebb0a355310310eb6e4c.tsv",
+      "normalized_sha256": "647202163c84330d9a70786a8aaa3f58fadf274a1efab27bdf3fef7f3f2c110e",
+      "observed_rule_types": {
+        "exact": 18607
+      },
+      "status": "ok"
+    },
+    {
+      "id": "417f16d94c147bea0299",
+      "url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "other",
+        "recommendation": "unmarked",
+        "html_classes": [],
+        "publisher_url": "https://github.com/chadmayfield/my-pihole-blocklists"
+      },
+      "content_categories": [
+        "adult"
+      ],
+      "in_machine_catalog": false,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 11868,
+        "accepted": 11868,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 11868,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/417f16d94c147bea0299.txt",
+      "sha256": "b8f84cf9119be05364e81b4debe3084cf02d7e6ed3443397a448bc609562ec10",
+      "bytes": 206038,
+      "normalized_file": "normalized/417f16d94c147bea0299.tsv",
+      "normalized_sha256": "70c683cb0577160290cc9136e34d4605133ec199d491987e5362459e698dadaa",
+      "observed_rule_types": {
+        "exact": 11868
+      },
+      "status": "ok"
+    },
+    {
+      "id": "a41d8da9a9717d711497",
+      "url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/crazy-max/WindowsSpyBlocker"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 353,
+        "accepted": 347,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 347,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 2,
+          "text": "### License: MIT"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/a41d8da9a9717d711497.txt",
+      "sha256": "709c00d24f5a50dab46ce18d8b1cd175db4593dc7f65623ed89070075a85a3a0",
+      "bytes": 12383,
+      "normalized_file": "normalized/a41d8da9a9717d711497.tsv",
+      "normalized_sha256": "62a6005b680ce5da58b40fe2b314786f2f8a69bdb96e00402786f4cf8d547d84",
+      "observed_rule_types": {
+        "exact": 347
+      },
+      "status": "ok"
+    },
+    {
+      "id": "e7868de6fead6b660297",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "supplement",
+        "recommendation": "not-on-page"
+      },
+      "content_categories": [
+        "gambling"
+      ],
+      "in_machine_catalog": false,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "suffix",
+      "counts": {
+        "lines": 648755,
+        "accepted": 648743,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 648743,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 4,
+          "text": "# License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/e7868de6fead6b660297.txt",
+      "sha256": "14ca032574589e24c835b14da57139592987c8c953862abf1574b7942d8837ae",
+      "bytes": 12755114,
+      "normalized_file": "normalized/e7868de6fead6b660297.tsv",
+      "normalized_sha256": "c3e8f658a75e316ab693f4c5a6862a11cdc180f43b0a87333c9900e5c27b7596",
+      "observed_rule_types": {
+        "suffix": 648743
+      },
+      "status": "ok"
+    },
+    {
+      "id": "bd4249d44d231e54da8e",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/nsfw.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "supplement",
+        "recommendation": "not-on-page"
+      },
+      "content_categories": [
+        "adult"
+      ],
+      "in_machine_catalog": false,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "suffix",
+      "counts": {
+        "lines": 77153,
+        "accepted": 77141,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 77141,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 4,
+          "text": "# License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/bd4249d44d231e54da8e.txt",
+      "sha256": "399c08741ea99dafc1110c1ea02bc1f1d098e396da3f127c763f700df54323f6",
+      "bytes": 1396101,
+      "normalized_file": "normalized/bd4249d44d231e54da8e.tsv",
+      "normalized_sha256": "beffe37ba3d6abe90a4759086f6127ef21fb410a75fe1d72e29a1d3f1361fbe3",
+      "observed_rule_types": {
+        "suffix": 77141
+      },
+      "status": "ok"
+    },
+    {
+      "id": "496340023ef0f01ff0a3",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "supplement",
+        "recommendation": "not-on-page"
+      },
+      "content_categories": [
+        "ads",
+        "tracking",
+        "malware",
+        "phishing",
+        "scams"
+      ],
+      "in_machine_catalog": false,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "suffix",
+      "counts": {
+        "lines": 224742,
+        "accepted": 224729,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 224729,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 5,
+          "text": "# License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/496340023ef0f01ff0a3.txt",
+      "sha256": "2689697a05a51e28794c546eba130f12a546950b925d93b43c7b7aa869815428",
+      "bytes": 4897233,
+      "normalized_file": "normalized/496340023ef0f01ff0a3.tsv",
+      "normalized_sha256": "41dd3524cbb073e61dd9811167bd7dd17c4d2f4cfc1f12b8dba5517edd7e3fab",
+      "observed_rule_types": {
+        "suffix": 224729
+      },
+      "status": "ok"
+    },
+    {
+      "id": "108b90fb7cea2a21b8a3",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "supplement",
+        "recommendation": "not-on-page"
+      },
+      "content_categories": [
+        "malware",
+        "phishing",
+        "scams"
+      ],
+      "in_machine_catalog": false,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "suffix",
+      "counts": {
+        "lines": 1428972,
+        "accepted": 1428958,
+        "exceptions": 0,
+        "rejected": 1,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 1428958,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 5,
+          "text": "# License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/108b90fb7cea2a21b8a3.txt",
+      "sha256": "1bd2bd7ff95c369d01daa2750d8cbee5da1f0d06a8e8ce0e5a777d0812aca3eb",
+      "bytes": 28968185,
+      "normalized_file": "normalized/108b90fb7cea2a21b8a3.tsv",
+      "normalized_sha256": "8aa8a782099ba7b69c6c244eca4485f82b3724a352ec5319c2fbb17104e27d73",
+      "observed_rule_types": {
+        "suffix": 1428958
+      },
+      "status": "ok"
+    },
+    {
+      "id": "d0e0aa18361763b04400",
+      "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/lists/wildcard_domains/scams.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "unmarked",
+        "html_classes": [],
+        "publisher_url": "https://github.com/jarelllama/Scam-Blocklist"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "suffix",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 468739,
+        "accepted": 468717,
+        "exceptions": 0,
+        "rejected": 12,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 468717,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 4,
+          "text": "# License: https://github.com/jarelllama/Scam-Blocklist/blob/main/LICENSE.md"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/d0e0aa18361763b04400.txt",
+      "sha256": "7fdb5d9dc3d221d1eedfbeb6d4b10bef12cd8f57db8d33696f36e0fd5cd9ad48",
+      "bytes": 9947809,
+      "normalized_file": "normalized/d0e0aa18361763b04400.tsv",
+      "normalized_sha256": "9a5f948361b19312fa6ad8f286f4ffa017e1b73348c9a7070935a4526bcd460c",
+      "observed_rule_types": {
+        "suffix": 468717
+      },
+      "status": "ok"
+    },
+    {
+      "id": "eb100586cb50f3b54f15",
+      "url": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "advertising",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://github.com/jdlingyu/ad-wars"
+      },
+      "content_categories": [
+        "advertising"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 1738,
+        "accepted": 1707,
+        "exceptions": 0,
+        "rejected": 2,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 1645,
+        "duplicates": 62
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/eb100586cb50f3b54f15.txt",
+      "sha256": "061f79539890ca296f6492a0687b4b6eca780544da9b437756e881291214788e",
+      "bytes": 49407,
+      "normalized_file": "normalized/eb100586cb50f3b54f15.tsv",
+      "normalized_sha256": "66292e13201b6227b03c4852392700f831092020608242dd68e76323e150d1bc",
+      "observed_rule_types": {
+        "exact": 1707
+      },
+      "status": "ok"
+    },
+    {
+      "id": "91425bc596ef6c678569",
+      "url": "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "unmarked",
+        "html_classes": [],
+        "publisher_url": "https://github.com/matomo-org/referrer-spam-blacklist"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 2355,
+        "accepted": 2355,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 2355,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/91425bc596ef6c678569.txt",
+      "sha256": "f7f48b319dc91c056070e32e019dfaafbf9fe01491dd0b2502c71d4cfffd7cbe",
+      "bytes": 37764,
+      "normalized_file": "normalized/91425bc596ef6c678569.tsv",
+      "normalized_sha256": "9e84790455161c0464ce89a8556f2bf87ccfa89645fe144bddd41f0ed642eb61",
+      "observed_rule_types": {
+        "exact": 2355
+      },
+      "status": "ok"
+    },
+    {
+      "id": "42e78a227b3d373779ca",
+      "url": "https://raw.githubusercontent.com/tg12/pihole-phishtank-list/master/list/phish_domains.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://github.com/tg12/pihole-phishtank-list"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 49865,
+        "accepted": 49855,
+        "exceptions": 0,
+        "rejected": 10,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 49851,
+        "duplicates": 4
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/42e78a227b3d373779ca.txt",
+      "sha256": "e8183d99af72ed2a6411c7f535706eab4160d679d3692f5071fbe5faa4f8e654",
+      "bytes": 1757169,
+      "normalized_file": "normalized/42e78a227b3d373779ca.tsv",
+      "normalized_sha256": "b9c0ea5b60f54c014338adc97a710a5e7cbf71ef141789be304b57c6e6b4406e",
+      "observed_rule_types": {
+        "exact": 49855
+      },
+      "status": "ok"
+    },
+    {
+      "id": "19d62bfdcc6c0aa3b6b4",
+      "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "advertising",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://disconnect.me/"
+      },
+      "content_categories": [
+        "advertising"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 2704,
+        "accepted": 2697,
+        "exceptions": 0,
+        "rejected": 3,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 2697,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 2,
+          "text": "# License: GPLv3"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/19d62bfdcc6c0aa3b6b4.txt",
+      "sha256": "ac0360be31da0ddac23a407af6216008d656390d3bbdefac48db292aeec7216d",
+      "bytes": 43604,
+      "normalized_file": "normalized/19d62bfdcc6c0aa3b6b4.tsv",
+      "normalized_sha256": "4752a0ab7c4e75acf7ffe5c70dc4c49a051e6b204a97c5d233485d8e1244f0b7",
+      "observed_rule_types": {
+        "exact": 2697
+      },
+      "status": "ok"
+    },
+    {
+      "id": "a0a06e5ccc3382738e91",
+      "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://disconnect.me/"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 2739,
+        "accepted": 2732,
+        "exceptions": 0,
+        "rejected": 4,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 2732,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 2,
+          "text": "# License: GPLv3"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/a0a06e5ccc3382738e91.txt",
+      "sha256": "769a4de32c69d5efd980054b2bac3945e2afa3cc36b874810da3c7fe8c744bba",
+      "bytes": 44155,
+      "normalized_file": "normalized/a0a06e5ccc3382738e91.tsv",
+      "normalized_sha256": "b5f5a755dd2fa1d58521a04629f841c8d666e7ee17441943bd91cab7f4e30470",
+      "observed_rule_types": {
+        "exact": 2732
+      },
+      "status": "ok"
+    },
+    {
+      "id": "dfd8da19ccf9b81db47a",
+      "url": "https://someonewhocares.org/hosts/zero/hosts",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "unmarked",
+        "html_classes": [],
+        "publisher_url": "https://someonewhocares.org/"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 13416,
+        "accepted": 13090,
+        "exceptions": 0,
+        "rejected": 14,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 13090,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 3,
+          "text": "# You are free to copy and distribute this file for non-commercial uses,"
+        },
+        {
+          "line": 4,
+          "text": "# as long the original URL and attribution is included."
+        }
+      ],
+      "warnings": [],
+      "file": "raw/dfd8da19ccf9b81db47a.txt",
+      "sha256": "d572d7e99c8ad96948086453faab13e6b9ce4280b23b947ae491ffbd25a92b3c",
+      "bytes": 367794,
+      "normalized_file": "normalized/dfd8da19ccf9b81db47a.tsv",
+      "normalized_sha256": "1a0b2cb7891ff31f62b48e2b546432ca37853d6dbca0310be75c795a73525ec6",
+      "observed_rule_types": {
+        "exact": 13090
+      },
+      "status": "ok"
+    },
+    {
+      "id": "623edc349c7a7bc14f0a",
+      "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://urlhaus.abuse.ch/api/"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 0,
+        "accepted": 0,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 0,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "status": "failed",
+      "error": "HTTP Error 410: Gone"
+    },
+    {
+      "id": "adeb91c87c37c4cdce52",
+      "url": "https://v.firebog.net/hosts/AdguardDNS.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "advertising",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://filters.adtidy.org/extension/chromium/filters/15.txt"
+      },
+      "content_categories": [
+        "advertising"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 190487,
+        "accepted": 190478,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 190478,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [
+        "Lossy upstream adblock-to-domain mirror; original exceptions/context cannot be reconstructed. Quarantine pending upstream review."
+      ],
+      "file": "raw/adeb91c87c37c4cdce52.txt",
+      "sha256": "3f3f26e38104331e14a6848ade2d46f70c8335ca9ad63e70ad788d3a1d4d7606",
+      "bytes": 3997032,
+      "normalized_file": "normalized/adeb91c87c37c4cdce52.tsv",
+      "normalized_sha256": "6066785b0362453b0e0a7d613e24b5da775fee24f98ad98d28abe29265433a4a",
+      "observed_rule_types": {
+        "exact": 190478
+      },
+      "status": "ok"
+    },
+    {
+      "id": "11d929e8b03efb46538c",
+      "url": "https://v.firebog.net/hosts/Admiral.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "advertising",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/LanikSJ/ubo-filters"
+      },
+      "content_categories": [
+        "advertising"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 1662,
+        "accepted": 1653,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 1653,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [
+        "Lossy upstream adblock-to-domain mirror; original exceptions/context cannot be reconstructed. Quarantine pending upstream review."
+      ],
+      "file": "raw/11d929e8b03efb46538c.txt",
+      "sha256": "d07997176d8b014f7faf523acdfb4dccf52671e9e8125285abcfc62febab8b7c",
+      "bytes": 28833,
+      "normalized_file": "normalized/11d929e8b03efb46538c.tsv",
+      "normalized_sha256": "7b14784ec62df705d9b55be70a1c5e188d11c09c5da6f970007428c840582d7b",
+      "observed_rule_types": {
+        "exact": 1653
+      },
+      "status": "ok"
+    },
+    {
+      "id": "7faa974d2dba2c969596",
+      "url": "https://v.firebog.net/hosts/Easylist.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "advertising",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/easylist/easylist"
+      },
+      "content_categories": [
+        "advertising"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 51640,
+        "accepted": 51631,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 51631,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [
+        "Lossy upstream adblock-to-domain mirror; original exceptions/context cannot be reconstructed. Quarantine pending upstream review."
+      ],
+      "file": "raw/7faa974d2dba2c969596.txt",
+      "sha256": "a0d0b83700b7d55f466ee38dcdcedab0a835af934f9158148f2f88a99f4c7f7e",
+      "bytes": 998018,
+      "normalized_file": "normalized/7faa974d2dba2c969596.tsv",
+      "normalized_sha256": "c395a8ead809aecab14baa4ccd19e04811464aa7d4b5ee2d0901ea3ea450272b",
+      "observed_rule_types": {
+        "exact": 51631
+      },
+      "status": "ok"
+    },
+    {
+      "id": "1616694fcc2e0d6b4c56",
+      "url": "https://v.firebog.net/hosts/Easyprivacy.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://github.com/easylist/easylist"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 43272,
+        "accepted": 43260,
+        "exceptions": 0,
+        "rejected": 3,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 43260,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [
+        "Lossy upstream adblock-to-domain mirror; original exceptions/context cannot be reconstructed. Quarantine pending upstream review."
+      ],
+      "file": "raw/1616694fcc2e0d6b4c56.txt",
+      "sha256": "0288b7c7e1c8bd720266c925b44e428a7a435e36cda758251fde1d1666cfb847",
+      "bytes": 946602,
+      "normalized_file": "normalized/1616694fcc2e0d6b4c56.tsv",
+      "normalized_sha256": "c5592e5a6481017f7fed93d5d209bd8ba9d9cb306203d91c54a71e2062b4e205",
+      "observed_rule_types": {
+        "exact": 43260
+      },
+      "status": "ok"
+    },
+    {
+      "id": "4b06ac40a80c3cf33ed7",
+      "url": "https://v.firebog.net/hosts/Kowabit.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "http://blocklist.kowabit.de/list.txt"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 7697,
+        "accepted": 7692,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 7680,
+        "duplicates": 12
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/4b06ac40a80c3cf33ed7.txt",
+      "sha256": "49fed67826eda633ed87d77708e2c0d118319142887d986217b68c6df867f58a",
+      "bytes": 116849,
+      "normalized_file": "normalized/4b06ac40a80c3cf33ed7.tsv",
+      "normalized_sha256": "cb4c56aed7862861ff120c1d8dbbf2415b285f61a2c53b503ff0d96fb5e2e037",
+      "observed_rule_types": {
+        "exact": 7692
+      },
+      "status": "ok"
+    },
+    {
+      "id": "5c92dd7dc61496fd5179",
+      "url": "https://v.firebog.net/hosts/Prigent-Ads.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://dsi.ut-capitole.fr/blacklists/index_en.php"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 4274,
+        "accepted": 4269,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 4269,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/5c92dd7dc61496fd5179.txt",
+      "sha256": "0eda34105809443c4305a27c2887bcdc898e3197da73c7186fd0356d8954f40d",
+      "bytes": 70554,
+      "normalized_file": "normalized/5c92dd7dc61496fd5179.tsv",
+      "normalized_sha256": "491f86120a52d60bf747acad9d5cc8ea532996f60fc4482a50958e7de7002c53",
+      "observed_rule_types": {
+        "exact": 4269
+      },
+      "status": "ok"
+    },
+    {
+      "id": "143efef66da68055b273",
+      "url": "https://v.firebog.net/hosts/Prigent-Adult.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "other",
+        "recommendation": "unmarked",
+        "html_classes": [],
+        "publisher_url": "https://dsi.ut-capitole.fr/blacklists/index_en.php"
+      },
+      "content_categories": [
+        "adult"
+      ],
+      "in_machine_catalog": false,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 4592059,
+        "accepted": 4590337,
+        "exceptions": 0,
+        "rejected": 1716,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 4590337,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/143efef66da68055b273.txt",
+      "sha256": "bf1454bbbf900b6516b15c6a1b075b227a2325f680a906254609b58eb36968dc",
+      "bytes": 124426906,
+      "normalized_file": "normalized/143efef66da68055b273.tsv",
+      "normalized_sha256": "2c243bff1ce5ae083aa6e29794016944f220ce22c9dc4dc583b1183d89f0e8c3",
+      "observed_rule_types": {
+        "exact": 4590337
+      },
+      "status": "ok"
+    },
+    {
+      "id": "9682971443b4a91abef7",
+      "url": "https://v.firebog.net/hosts/Prigent-Crypto.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://dsi.ut-capitole.fr/blacklists/index_en.php"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 11495,
+        "accepted": 11490,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 11490,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/9682971443b4a91abef7.txt",
+      "sha256": "cffbd6b5ed524f6dbd73d1fe4f8ab6bb8307f848dbc7edcbaad78cd38a974f05",
+      "bytes": 203972,
+      "normalized_file": "normalized/9682971443b4a91abef7.tsv",
+      "normalized_sha256": "e190c3e771ccf222e0369de55bbb00544278b5b0a6dd9c563fb3d9068475087b",
+      "observed_rule_types": {
+        "exact": 11490
+      },
+      "status": "ok"
+    },
+    {
+      "id": "ba55d009552095473029",
+      "url": "https://v.firebog.net/hosts/Prigent-Malware.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "unmarked",
+        "html_classes": [],
+        "publisher_url": "https://dsi.ut-capitole.fr/blacklists/index_en.php"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 239646,
+        "accepted": 239640,
+        "exceptions": 0,
+        "rejected": 1,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 239640,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/ba55d009552095473029.txt",
+      "sha256": "f5a1a66f3791fc9c78295813d2852cd129ef2b6081af69ebd85104f01c300797",
+      "bytes": 4619861,
+      "normalized_file": "normalized/ba55d009552095473029.tsv",
+      "normalized_sha256": "04220e5a61b62dd629b839c47c06037113b458cf96e5f82ed5e09d995b85a850",
+      "observed_rule_types": {
+        "exact": 239640
+      },
+      "status": "ok"
+    },
+    {
+      "id": "3924a78308567080b00c",
+      "url": "https://v.firebog.net/hosts/RPiList-Malware.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "unmarked",
+        "html_classes": [],
+        "publisher_url": "https://github.com/RPiList/specials"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 761614,
+        "accepted": 760992,
+        "exceptions": 0,
+        "rejected": 617,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 760992,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/3924a78308567080b00c.txt",
+      "sha256": "0c68d4a0deb0c68e1caffd11153ad98c7485c9db706459166d87e0928b5eb7ee",
+      "bytes": 18603309,
+      "normalized_file": "normalized/3924a78308567080b00c.tsv",
+      "normalized_sha256": "b712075ec842899658f8d61b71d3e26eebd75396c1be78e22cf84022c0cff07d",
+      "observed_rule_types": {
+        "suffix": 760992
+      },
+      "status": "ok"
+    },
+    {
+      "id": "a05eddb5750a86973ab8",
+      "url": "https://v.firebog.net/hosts/RPiList-Phishing.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "malicious",
+        "recommendation": "unmarked",
+        "html_classes": [],
+        "publisher_url": "https://github.com/RPiList/specials"
+      },
+      "content_categories": [
+        "malicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 153863,
+        "accepted": 153858,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 153858,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/a05eddb5750a86973ab8.txt",
+      "sha256": "f7ddbcb7d8cb3a11893feaba2896a597bd9a09451bc638bf374446f14087af71",
+      "bytes": 3777038,
+      "normalized_file": "normalized/a05eddb5750a86973ab8.tsv",
+      "normalized_sha256": "66af2a2b88df7271caae4344843745f8e46fb9fef6ff20445e013dfd6cf61df3",
+      "observed_rule_types": {
+        "suffix": 153858
+      },
+      "status": "ok"
+    },
+    {
+      "id": "91f100f4f2fd68e2faab",
+      "url": "https://v.firebog.net/hosts/neohostsbasic.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://github.com/neofelhz/neohosts"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 2420,
+        "accepted": 2414,
+        "exceptions": 0,
+        "rejected": 1,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 2411,
+        "duplicates": 3
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/91f100f4f2fd68e2faab.txt",
+      "sha256": "86e19faae22e02ccb4148c8263d580572042ccb1264b51ad43fa338b2dac9952",
+      "bytes": 44305,
+      "normalized_file": "normalized/91f100f4f2fd68e2faab.tsv",
+      "normalized_sha256": "bf030b4afd47d0c6f1dd10aa3b6b855098165e9f892cc4d37a801ce9d313ff46",
+      "observed_rule_types": {
+        "exact": 2414
+      },
+      "status": "ok"
+    },
+    {
+      "id": "9401af26c002c3d5751a",
+      "url": "https://v.firebog.net/hosts/static/w3kbl.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "ticked",
+        "html_classes": [
+          "bdTick"
+        ],
+        "publisher_url": "https://v.firebog.net/hosts/static/w3kbl.txt"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 422,
+        "accepted": 356,
+        "exceptions": 0,
+        "rejected": 0,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 351,
+        "duplicates": 5
+      },
+      "license_evidence": [
+        {
+          "line": 4,
+          "text": "# Licensing: CC BY 4.0 (http://creativecommons.org/licenses/by/4.0/)"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/9401af26c002c3d5751a.txt",
+      "sha256": "6fea64b3c3cab7ca79147b7880c61871a89c7a7f802f4df00bceb167dfefac20",
+      "bytes": 8440,
+      "normalized_file": "normalized/9401af26c002c3d5751a.tsv",
+      "normalized_sha256": "c9e8304768807d95d72316e3ed25bf4a0faf5f2366326417894622e45006345c",
+      "observed_rule_types": {
+        "exact": 356
+      },
+      "status": "ok"
+    },
+    {
+      "id": "ab365ffc549f930dc78c",
+      "url": "https://winhelp2002.mvps.org/hosts.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://winhelp2002.mvps.org/"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 9972,
+        "accepted": 8728,
+        "exceptions": 0,
+        "rejected": 4,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 8728,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 16,
+          "text": "# meeting the full criteria of the below license terms.    #"
+        },
+        {
+          "line": 18,
+          "text": "# This work is licensed under the Creative Commons         #"
+        },
+        {
+          "line": 19,
+          "text": "# Attribution-NonCommercial-ShareAlike License.            #"
+        },
+        {
+          "line": 20,
+          "text": "# https://creativecommons.org/licenses/by-nc-sa/4.0/       #"
+        },
+        {
+          "line": 22,
+          "text": "# License info for commercial purposes contact Winhelp2002 #"
+        }
+      ],
+      "warnings": [],
+      "file": "raw/ab365ffc549f930dc78c.txt",
+      "sha256": "305d2e095e5aa2bebb80384c1325354f4f477c2097fc5dbe9b10c49c1fc4453a",
+      "bytes": 334861,
+      "normalized_file": "normalized/ab365ffc549f930dc78c.tsv",
+      "normalized_sha256": "e571cbc2f1512fb75b73d579462b58aa64664e28c974bca29ba34f8f719b9bdb",
+      "observed_rule_types": {
+        "exact": 8728
+      },
+      "status": "ok"
+    },
+    {
+      "id": "64706598780423a0af27",
+      "url": "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "tracking",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://www.github.developerdan.com/hosts/"
+      },
+      "content_categories": [
+        "tracking"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 429309,
+        "accepted": 428440,
+        "exceptions": 0,
+        "rejected": 846,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 428440,
+        "duplicates": 0
+      },
+      "license_evidence": [
+        {
+          "line": 9,
+          "text": "# Copyright 2023 Daniel White"
+        },
+        {
+          "line": 11,
+          "text": "# Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 12,
+          "text": "# you may not use this file except in compliance with the License."
+        },
+        {
+          "line": 13,
+          "text": "# You may obtain a copy of the License at"
+        },
+        {
+          "line": 15,
+          "text": "# http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "line": 18,
+          "text": "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+        },
+        {
+          "line": 20,
+          "text": "# See the License for the specific language governing permissions and"
+        },
+        {
+          "line": 21,
+          "text": "# limitations under the License."
+        }
+      ],
+      "warnings": [],
+      "file": "raw/64706598780423a0af27.txt",
+      "sha256": "0b173f72f93228b9520ff1ba73afd5d8943676d0e16af920b7adae868a58e299",
+      "bytes": 14407741,
+      "normalized_file": "normalized/64706598780423a0af27.tsv",
+      "normalized_sha256": "2b2079a1a6c23cc380fc4a5aaaf21b69c769ba12a45d75ac739dccff2d5add95",
+      "observed_rule_types": {
+        "exact": 428440
+      },
+      "status": "ok"
+    },
+    {
+      "id": "b77faa3a117ceab89d94",
+      "url": "https://www.joewein.net/dl/bl/dom-bl-base.txt",
+      "enabled": false,
+      "license_review": "pending",
+      "firebog": {
+        "category": "suspicious",
+        "recommendation": "not-recommended",
+        "html_classes": [
+          "bdCross"
+        ],
+        "publisher_url": "https://www.joewein.de/sw/bl-text.htm"
+      },
+      "content_categories": [
+        "suspicious"
+      ],
+      "in_machine_catalog": true,
+      "plain_domain_semantics": "exact",
+      "asterisk_semantics": "subdomains",
+      "counts": {
+        "lines": 59528,
+        "accepted": 59448,
+        "exceptions": 0,
+        "rejected": 80,
+        "unsupported": 0,
+        "unsupported_exceptions": 0,
+        "unique": 59448,
+        "duplicates": 0
+      },
+      "license_evidence": [],
+      "warnings": [],
+      "file": "raw/b77faa3a117ceab89d94.txt",
+      "sha256": "4d8dbbbb797e8c7146f277fd68f511dd9be281a9ea17099c538277fcfa9b7e6f",
+      "bytes": 1080850,
+      "normalized_file": "normalized/b77faa3a117ceab89d94.tsv",
+      "normalized_sha256": "0ae342b0aa50f2b5266c1cd19ec1fb758c98ebf01906b21287c8ed5240a401b6",
+      "observed_rule_types": {
+        "exact": 59448
+      },
+      "status": "ok"
+    }
+  ]
+}

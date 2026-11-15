@@ -1,0 +1,44 @@
+{
+  "retrieved_at": "2026-11-12T12:14:00.938782+00:00",
+  "retrievals": [
+    {
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/FAQ.md",
+      "final_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/FAQ.md",
+      "file": "evidence/3bac05dd7d7ef9341c89.txt",
+      "bytes": 83100,
+      "sha256": "b3734b0c8dd7fa6fda0af2ba23047c9cfb888e8084ff60340d2a2822e2bf4eae"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/README.md",
+      "file": "evidence/ae069b0c5febc56b72fd.txt",
+      "bytes": 6247,
+      "sha256": "06fbca17162b6216e6a50595cef9d61029472bf18631daea887f5caa39728531"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/davidonzo/Threat-Intel/master/lists/latestdomains.txt",
+      "final_url": "https://raw.githubusercontent.com/davidonzo/Threat-Intel/master/lists/latestdomains.txt",
+      "file": "evidence/0f9d0690ce37dc5f819f.txt",
+      "bytes": 3220,
+      "sha256": "f6d35ad5179414402e5715bc782100a12188ce485fd29e254c6d8383e595fa55"
+    }
+  ],
+  "original_retries": {
+    "hostsfile.mine.nu": "DNS resolution failed",
+    "osint.digitalside.it": "timeout",
+    "urlhaus.abuse.ch": "HTTP 410; official API requires Auth-Key, no anonymous replacement attempted"
+  },
+  "alternative_rationale": "davidonzo/Threat-Intel identifies itself as DigitalSide Threat-Intel in archived publisher README evidence/f08a6e1ba897b07515ac.txt. Official alternative downloaded and parsed, but stale: header Generated at 2024-10-18 09:07:30. Not substituted into the current corpus.",
+  "alternative_audit": {
+    "source_url": "https://raw.githubusercontent.com/davidonzo/Threat-Intel/master/lists/latestdomains.txt",
+    "counts": {"exact": 133, "rejected": 0, "unsupported": 0},
+    "unique_rules": 133,
+    "normalized_file": "evidence/digitalside-alternative.normalized.tsv",
+    "normalized_sha256": "99b7788cfdc406a959a434d9751bc6fe9bddd638555bfc4f96028294bdd9600a",
+    "enabled": false,
+    "license_review": "pending",
+    "freshness": "stale; 2024-10-18 generation timestamp",
+    "included_in_canonical": false
+  },
+  "additional_evidence_index": "evidence/additional-retrievals.json"
+}

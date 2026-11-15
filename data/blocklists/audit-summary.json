@@ -1,0 +1,39 @@
+{
+  "sources": 62,
+  "successful_sources": 59,
+  "failed_sources": 3,
+  "counts": {
+    "lines": 11351392,
+    "accepted": 11187198,
+    "exceptions": 0,
+    "rejected": 4459,
+    "unsupported": 0,
+    "unsupported_exceptions": 0,
+    "unique": 11186031,
+    "duplicates": 1167
+  },
+  "canonical_provenance_rows": 11186031,
+  "unique_rules": {
+    "exact": 6843404,
+    "suffix": 3395783
+  },
+  "unique_domains": 9737280,
+  "firebog_recommendations": {
+    "not-on-page": 4,
+    "not-recommended": 23,
+    "ticked": 25,
+    "unmarked": 10
+  },
+  "same_domain_exact_suffix": 501907,
+  "allow_block_overlaps": 0,
+  "canonical_sha256": "63f29f5649066f3532eb3d9b20c422b59620ab20ccd18a63e56e707fa4ce9d14",
+  "original_inputs_sha256": {
+    "manifest.json": "34c66304d0553fa4f31063b969e7ecc4623ebdd8d45cd9177fec2f362d31394c",
+    "summary.json": "239f3c67be329e1d379faf02c3e6b357a9df57b1aca2ac6ad0c9bc32d1ec7242",
+    "firebog.html": "6c488e6f685ffa649855a3b881168cca90bed9f1cf3edb2f6dbcbed6f56967e4",
+    "firebog-catalog.txt": "947c338939fe02f1f98565359322abe3ff889dad26848bf296cba01cba9260c0",
+    "domains.experimental.txt": "deb1d8e4fa9b4f19cac4aa01ec1fbcb93e4b2f6d0d80c594f6284f89ce339c65"
+  },
+  "idna_version": "3.20",
+  "generated_at_utc": "2026-11-12T12:24:31.450999+00:00"
+}

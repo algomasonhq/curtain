@@ -1,0 +1,8 @@
+{
+  "fetched_at_utc": "2026-11-12T12:09:16.866014+00:00",
+  "attempted_sources": 62,
+  "successful_sources": 59,
+  "failed_sources": 3,
+  "unique_domains": 7759211,
+  "purpose": "Experimental corpus, not an approved default policy. Exact versus suffix semantics must be preserved from original sources before production compilation."
+}

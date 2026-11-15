@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "source_count": 62,
+  "normalized_sources": 59,
+  "canonical_rows": 11186031,
+  "unique_rules": {
+    "exact": 6843404,
+    "suffix": 3395783
+  },
+  "unique_domains": 9737280,
+  "original_inputs_unchanged": true,
+  "canonical_sorted_deduplicated": true,
+  "per_source_counts_and_hashes_match": true,
+  "report_totals_match": true,
+  "real_fixture_lines_match_archived_downloads": true,
+  "canonical_sha256": "63f29f5649066f3532eb3d9b20c422b59620ab20ccd18a63e56e707fa4ce9d14",
+  "files_bytes": {
+    "audit-manifest.json": 86407,
+    "canonical.tsv": 564686686,
+    "audit-diagnostics.tsv": 327154,
+    "semantics-conflicts.tsv": 29909132
+  }
+}
