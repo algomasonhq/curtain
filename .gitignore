@@ -16,6 +16,11 @@ rebuild/
 .fixture-work/
 *.keystore
 *.jks
+# Installation/test CA identities must never be committed
+*.pem
+*.key
+*.p12
+*.pfx
 *.apk
 *.fc
 .env

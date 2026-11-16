@@ -1,6 +1,6 @@
 # Curtain
 
-Experimental **Android 15+ DNS-only filtering VPN** with an on-device compact domain index, signed static CDN updates, and opt-in query logging. No account, backend service, root, CA installation, TLS interception, or analytics. Not a full-request or child-safety filter.
+Experimental **Android 15+ DNS-only filtering VPN** with an on-device compact domain index, signed static CDN updates, and opt-in query logging. DNS mode needs no account, backend service, root or CA installation. This branch additionally provides an opt-in **full-route on-device inspection VPN**: native TUN → TCP/SOCKS → installation-local CA TLS interception → host/path rules and response replacement. API35 emulator tests use an unproxied client and real TLS origins. DNS-only remains the default; inspection supports HTTP/1.1 common methods, streamed uploads/responses and persistent connections. One installation-local root CA survives app restarts and updates; explicit rotation gates replacement on guided old-CA removal. Non-DNS UDP/QUIC, downstream HTTP/2 and WebSocket upgrades remain unsupported. This is not arbitrary-app/protocol compatibility. See [HTTPS implementation, engine/license evaluation and exercised TLS evidence](docs/HTTPS-INSPECTION.md). No analytics. Not a full-request or child-safety filter.
 
 ## Install the first APK
 
