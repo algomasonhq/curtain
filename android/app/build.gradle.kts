@@ -6,5 +6,20 @@ android {
  compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
  kotlinOptions { jvmTarget = "17" }
  androidResources { noCompress += "fc" }
+ // Opt-in full-route inspection VPN: hev-socks5-tunnel native engine (third-party),
+ // built from app/src/main/jni via the checked-in entry makefiles.
+ ndkVersion = "27.2.12479018"
+ sourceSets { getByName("main") { java.srcDir("src/main/jni/hev-socks5-tunnel/android") } }
+ defaultConfig { ndk { abiFilters += listOf("arm64-v8a","x86_64") } }
+ externalNativeBuild { ndkBuild { path = file("src/main/jni/Android.mk") } }
 }
-dependencies { implementation("androidx.work:work-runtime:2.10.0"); implementation("net.i2p.crypto:eddsa:0.3.0"); testImplementation("junit:junit:4.13.2") }
+dependencies {
+ implementation("androidx.work:work-runtime:2.10.0")
+ implementation("net.i2p.crypto:eddsa:0.3.0")
+ implementation("com.squareup.okhttp3:okhttp:4.12.0")
+ implementation("com.squareup.okhttp3:okhttp-tls:4.12.0")
+ // Apache-2.0 framing/parser engine; no handwritten chunk or persistent-response codec.
+ implementation("org.apache.httpcomponents:httpcore:4.4.16")
+ testImplementation("junit:junit:4.13.2")
+ testImplementation("com.squareup.okhttp3:mockwebserver:4.12.0")
+}

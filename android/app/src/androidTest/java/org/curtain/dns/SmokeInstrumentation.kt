@@ -9,8 +9,14 @@ import java.net.InetAddress
 /** No production test hooks; run only after shell grants this private emulator VPN consent. */
 class SmokeInstrumentation:Instrumentation() {
  private var fixture:String?=null
- override fun onCreate(arguments:Bundle?) { fixture=arguments?.getString("fixture"); super.onCreate(arguments); start() }
+ private var inspection=false
+ private var caLifecycle=false
+ private var originPort=0
+ private var originCertificate=""
+ override fun onCreate(arguments:Bundle?) { fixture=arguments?.getString("fixture"); inspection=arguments?.getString("inspection")=="true"; caLifecycle=arguments?.getString("caLifecycle")=="true"; originPort=arguments?.getString("originPort")?.toInt() ?: 0; originCertificate=arguments?.getString("originCertificate") ?: ""; super.onCreate(arguments); start() }
  override fun onStart() {
+  if(caLifecycle) { CaLifecycleSmoke(this).run(); return }
+  if(inspection) { InspectionVpnSmoke(this,originPort,originCertificate).run(); return }
   val report=StringBuilder()
   try {
    val context=targetContext

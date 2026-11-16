@@ -1,0 +1,27 @@
+[
+  {
+    "path": ".",
+    "commit": "75dbc1e9ace6c70d3d1b94df7c283efe1de7effc",
+    "origin": "https://github.com/heiher/hev-socks5-tunnel.git"
+  },
+  {
+    "path": "src/core",
+    "commit": "b43fa857fb39c854da01d13bc55eded66b4f4a3b",
+    "origin": "https://github.com/heiher/hev-socks5-core"
+  },
+  {
+    "path": "third-part/hev-task-system",
+    "commit": "ded55c412b3951bc7decb5cb3b9135701e762998",
+    "origin": "https://github.com/heiher/hev-task-system"
+  },
+  {
+    "path": "third-part/lwip",
+    "commit": "8115cd6150ab32500db3d4d8bd8ad7ec6648534c",
+    "origin": "https://github.com/heiher/lwip"
+  },
+  {
+    "path": "third-part/yaml",
+    "commit": "0c82efd10dc67b9e7f159d2c7f5d1dc3c1b5bc11",
+    "origin": "https://github.com/heiher/yaml"
+  }
+]
